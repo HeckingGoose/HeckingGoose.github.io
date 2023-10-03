@@ -1,26 +1,21 @@
 h1, h2, h3, h4, h5, h6, p{
-    font-family:cursive;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 h1, h3{
     margin: 0px;
 }
-
-@media screen and (orientation: landscape){
-    .heading{
-        margin-left: auto;
-        margin-right: auto;
-        width: 50%;
-        text-align: center;
-        font-size: large;
-    }
+.heading{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: large;
 }
-@media screen and (orientation: portrait){
-    .heading{
-        margin-left: auto;
-        margin-right: auto;
-        width: 80%;
-        text-align: center;
-        font-size: large;
-    }
+.mainBody{
+    width:1080px;
+    height:1920px;
+    background-color: aliceblue;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 10px 10px 50px black;
 }
