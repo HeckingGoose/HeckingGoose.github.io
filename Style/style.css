@@ -1,21 +1,46 @@
-h1, h2, h3, h4, h5, h6, p{
-    font-family: 'Courier New', Courier, monospace;
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Indie+Flower&display=swap');
+h1, h2, h3, h4, h5, h6, p, a{
+    font-family: 'Indie Flower';
 }
-
 h1, h3{
     margin: 0px;
 }
-.heading{
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    font-size: large;
+a{
+    color: #5F5F5F;
+    text-decoration: none;
+}
+a:hover{
+    color: #3F3F3F;
+    text-decoration: underline #000000;
 }
 .mainBody{
     width:1080px;
     height:1920px;
-    background-color: aliceblue;
     margin-left: auto;
     margin-right: auto;
+    background-color: #00FF00;
+    display: flex;
+    flex-direction: column;
+    /*  Code for old 'paper sheet'-like styling
+    background-color: aliceblue;
     box-shadow: 10px 10px 50px black;
+    */
+}
+.heading{
+    background-color: #0000FF;
+    display: flex;
+    flex-direction: row;
+}
+.title{
+    margin-left: 0px;
+    text-align: center;
+    font-size: xx-large;
+    width: 540px;
+    height: 180px;
+    background-color: #FF0000;
+}
+.home{
+    width: 180px;
+    height: 180px;
+    background-color: #FFFF00;
 }
