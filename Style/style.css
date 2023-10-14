@@ -39,7 +39,7 @@ a:hover{
     height: 180px;
     background-color: #FF0000;
 }
-.home{
+#headerItem{
     width: 180px;
     height: 180px;
     background-color: #FFFF00;
