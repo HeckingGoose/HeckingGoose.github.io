@@ -33,14 +33,30 @@ a:hover{
 }
 .title{
     margin-left: 0px;
-    text-align: center;
-    font-size: xx-large;
     width: 540px;
     height: 180px;
-    background-color: #FF0000;
+    background-color: #FFEEEE;
+}
+.title h1{
+	text-align: center;
+	font-size: 70px;
+}
+.title h3{
+	text-align: center;
+	font-size: 40px;
 }
 #headerItem{
     width: 180px;
     height: 180px;
-    background-color: #FFFF00;
+    background-color: #FFEEEE;
+}
+#headerItem img{
+	width: 180px;
+	height: 180px;
+}
+#headerItem img:hover{
+	background-color: #DFCFCF;
+}
+.currentPage{
+	background-color: #EFDFDF;
 }
