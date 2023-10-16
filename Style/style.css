@@ -38,12 +38,16 @@ a:hover{
     background-color: #FFFEFE;
     display: flex;
     flex-direction: row;
+    border: 2px #EFDFDF;
+    border-style: none none solid none;
 }
 .title{
     margin-left: 0px;
     width: 540px;
     height: 180px;
     background-color: #FFEEEE;
+    border: 2px #EFDFDF;
+    border-style: none none solid none;
 }
 .title h1{
 	text-align: center;
@@ -59,6 +63,8 @@ a:hover{
     width: 180px;
     height: 180px;
     background-color: #FFEEEE;
+    border: 2px #EFDFDF;
+    border-style: none none solid none;
 }
 #headerItem img{
 	width: 180px;
