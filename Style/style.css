@@ -1,9 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Indie+Flower&display=swap');
-h1, h2, h3, h4, h5, h6, p, a{
+h1, h2, h3, h4, h5, h6, p, a, ul, li{
     font-family: 'Indie Flower';
 }
-h1, h3{
-    margin: 0px;
+h3, p{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+	font-size: 20px;
+}
+li{
+	font-size: 20px;
+	list-style-image: url('../Img/UI/ListMarker.png');
+}
+ul{
+	margin: 0px;
 }
 a{
     color: #5F5F5F;
@@ -18,16 +29,13 @@ a:hover{
     height:1920px;
     margin-left: auto;
     margin-right: auto;
-    background-color: #00FF00;
+    background-color: #FFFAFA;
     display: flex;
     flex-direction: column;
-    /*  Code for old 'paper sheet'-like styling
-    background-color: aliceblue;
-    box-shadow: 10px 10px 50px black;
-    */
+    box-shadow: 5px 5px 15px #CFCFCF;
 }
 .heading{
-    background-color: #0000FF;
+    background-color: #FFFEFE;
     display: flex;
     flex-direction: row;
 }
@@ -40,10 +48,12 @@ a:hover{
 .title h1{
 	text-align: center;
 	font-size: 70px;
+	margin: 0px;
 }
 .title h3{
 	text-align: center;
 	font-size: 40px;
+	margin: 0px;
 }
 #headerItem{
     width: 180px;
@@ -60,3 +70,39 @@ a:hover{
 .currentPage{
 	background-color: #EFDFDF;
 }
+.profile{
+	display: flex;
+	flex-direction:row;
+	margin-top: 10px;
+	margin-bottom:10px;
+	margin-left: 20px;
+	margin-right: 20px;
+	width: 1040px;
+	height: 256px;
+}
+.profile img{
+	width: 256px;
+	height: 256px;
+	box-shadow: 3px 3px 10px #CFCFCF;
+	margin-left: 4px;
+}
+.profileText{
+	width: 780px;
+	height: 256px;
+	background-color: #FFEEE;
+	border: 2px dashed #FFDFDF;
+}
+.profileText h3{
+	margin-top: 5px;
+	margin-bottom: 0px;
+}
+.siteTree{
+	display: flex;
+	flex-direction:column;
+	margin-top: 10px;
+	margin-bottom:10px;
+	margin-left: 20px;
+	margin-right: 20px;
+	width: 1040px;
+	height: 256px;
+	border: 2px dashed #FFDFDF;
