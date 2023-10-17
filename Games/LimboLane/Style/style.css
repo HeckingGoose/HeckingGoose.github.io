@@ -4,3 +4,13 @@ body{
 	background-position: center;
 	background-repeat: no-repeat;
 }
+.intro{
+	display: flex;
+	flex-direction: column;
+	border: 2px dashed #FFDFDF;
+	width: 1000px;
+	height; 500px;
+	margin-left: 40px;
+	margin-right: 40px;
+	margin-top: 40px;
+}
