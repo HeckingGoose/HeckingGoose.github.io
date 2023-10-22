@@ -32,7 +32,7 @@ a:hover{
     display: flex;
     flex-direction: column;
     box-shadow: 5px 5px 15px #CFCFCF;
-	padding-bottom: 200px;
+    padding-bottom: 200px;
 }
 .heading{
     background-color: #FFFEFE;
