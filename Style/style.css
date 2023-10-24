@@ -80,9 +80,9 @@ a:hover{
 	flex-direction:row;
 	margin-top: 10px;
 	margin-bottom:10px;
-	margin-left: 20px;
-	margin-right: 20px;
-	width: 1040px;
+	margin-left: 40px;
+	margin-right: 40px;
+	width: 1000px;
 	height: 256px;
 }
 #sectionImage img{
@@ -100,4 +100,46 @@ a:hover{
 #sectionText h3{
 	margin-top: 5px;
 	margin-bottom: 0px;
+}
+#section{
+	display: flex;
+	flex-direction: column;
+	border: 2px dashed #FFDFDF;
+	width: 1000px;
+	margin-left: 40px;
+	margin-right: 40px;
+	margin-top: 40px;
+}
+
+#section h1{
+	margin-left: 30px;
+	text-decoration: underline;
+}
+#section h2{
+	margin-left: 30px;
+	margin-bottom: 0px;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+#imageRow{
+	display: flex;
+	flex-direction: row;
+	width: 960px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+#imageRow img{
+	width: 100%;
+	box-shadow: 5px 5px 15px #CFCFCF;
+}
+#imageRow p{
+	font-size: 0px;
+	margin-right: 20px;
+}
+#imageBox p{
+	font-size: 18px;
+	margin-top: 5px;
+	margin-left: 15px;
+	margin-bottom: 0px;
+	color: #999999;
 }
