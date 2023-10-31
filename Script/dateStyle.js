@@ -47,18 +47,26 @@ switch (year)
                     case 31: // Halloween
                         // Set classes and background colour
                         document.body.style.backgroundColor = '#2E364E';
-
-                        mainBody.classList.remove('mainBody');
-                        mainBody.classList.add('mainBody_Halloween');
-
-                        heading.classList.remove('heading');
-                        heading.classList.add('heading_Halloween');
-
-                        title.classList.remove('title');
-                        title.classList.add('title_Halloween');
-
-                        currentPage.classList.remove('currentPage');
-                        currentPage.classList.add('currentPage_Halloween');
+                        if (mainBody != null)
+                        {
+                            mainBody.classList.remove('mainBody');
+                            mainBody.classList.add('mainBody_Halloween');
+                        }
+                        if (heading != null)
+                        {
+                            heading.classList.remove('heading');
+                            heading.classList.add('heading_Halloween');
+                        }
+                        if (title != null)
+                        {
+                            title.classList.remove('title');
+                            title.classList.add('title_Halloween');
+                        }
+                        if (currentPage != null)
+                        {
+                            currentPage.classList.remove('currentPage');
+                            currentPage.classList.add('currentPage_Halloween');
+                        }
 
                         for (var i = 0; i < headerItem.length; i++)
                         {
