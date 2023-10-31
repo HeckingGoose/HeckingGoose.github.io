@@ -37,10 +37,10 @@ a:hover{
 	width:1080px;
     margin-left: auto;
     margin-right: auto;
-    background-color: #000505;
+    background-color: #1D3E5A;
     display: flex;
     flex-direction: column;
-    box-shadow: 5px 5px 15px #CFCFCF;
+    box-shadow: 5px 5px 15px #0D2E4A;
     padding-bottom: 200px;
 }
 
@@ -51,6 +51,14 @@ a:hover{
     border: 2px #EFDFDF;
     border-style: none none solid none;
 }
+.heading_Halloween{
+	background-color: #1D3E5A;
+    display: flex;
+    flex-direction: row;
+    border: 2px #001E3A;
+    border-style: none none solid none;
+}
+
 .title{
     margin-left: 0px;
     width: 540px;
@@ -69,23 +77,61 @@ a:hover{
 	font-size: 40px;
 	margin: 0px;
 }
-#headerItem{
+.title_Halloween{
+	margin-left: 0px;
+    width: 540px;
+    height: 180px;
+    background-color: #0D2E4A;
+    border: 2px #001E3A;
+    border-style: none none solid none;
+}
+.title_Halloween h1{
+	text-align: center;
+	font-size: 70px;
+	margin: 0px;
+}
+.title_Halloween h3{
+	text-align: center;
+	font-size: 40px;
+	margin: 0px;
+}
+
+.headerItem{
     width: 180px;
     height: 180px;
     background-color: #FFEEEE;
     border: 2px #EFDFDF;
     border-style: none none solid none;
 }
-#headerItem img{
+.headerItem img{
 	width: 180px;
 	height: 180px;
 }
-#headerItem img:hover{
+.headerItem img:hover{
 	background-color: #DFCFCF;
 }
+.headerItem_Halloween{
+	width: 180px;
+    height: 180px;
+    background-color: #0D2E4A;
+    border: 2px #001E3A;
+    border-style: none none solid none;
+}
+.headerItem_Halloween img{
+	width: 180px;
+	height: 180px;
+}
+.headerItem_Halloween img:hover{
+	background-color: #001E3A;
+}
+
 .currentPage{
 	background-color: #EFDFDF;
 }
+.currentPage_Halloween{
+	background-color: #001E3A;
+}
+
 .profile{
 	display: flex;
 	flex-direction:row;
@@ -96,23 +142,39 @@ a:hover{
 	width: 1000px;
 	height: 256px;
 }
-#sectionImage img{
+.sectionImage img{
 	width: 256px;
 	height: 256px;
 	box-shadow: 3px 3px 10px #CFCFCF;
 	margin-left: 4px;
 }
-#sectionText{
+.sectionImage_Halloween img{
+	width: 256px;
+	height: 256px;
+	box-shadow: 3px 3px 10px #0D2E4A;
+	margin-left: 4px;
+}
+
+.sectionText{
 	width: 780px;
 	height: 256px;
-	background-color: #FFEEE;
 	border: 2px dashed #FFDFDF;
 }
-#sectionText h3{
+.sectionText h3{
 	margin-top: 5px;
 	margin-bottom: 0px;
 }
-#section{
+.sectionText_Halloween{
+	width: 780px;
+	height: 256px;
+	border: 2px dashed #001E3A;
+}
+.sectionText_Halloween h3{
+	margin-top: 5px;
+	margin-bottom: 0px;
+}
+
+.section{
 	display: flex;
 	flex-direction: column;
 	border: 2px dashed #FFDFDF;
@@ -121,33 +183,64 @@ a:hover{
 	margin-right: 40px;
 	margin-top: 40px;
 }
-
-#section h1{
+.section h1{
 	margin-left: 30px;
 	text-decoration: underline;
 }
-#section h2{
+.section h2{
 	margin-left: 30px;
 	margin-bottom: 0px;
 	margin-left: 20px;
 	margin-top: 20px;
 }
-#imageRow{
+.section_Halloween{
+	display: flex;
+	flex-direction: column;
+	border: 2px dashed #001E3A;
+	width: 1000px;
+	margin-left: 40px;
+	margin-right: 40px;
+	margin-top: 40px;
+}
+.section_Halloween h1{
+	margin-left: 30px;
+	text-decoration: underline;
+}
+.section_Halloween h2{
+	margin-left: 30px;
+	margin-bottom: 0px;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+
+.imageRow{
 	display: flex;
 	flex-direction: row;
 	width: 960px;
 	margin-left: 20px;
 	margin-right: 20px;
 }
-#imageRow img{
+.imageRow img{
 	width: 100%;
 	box-shadow: 5px 5px 15px #CFCFCF;
 }
-#imageRow p{
+.imageRow_Halloween{
+	display: flex;
+	flex-direction: row;
+	width: 960px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+.imageRow_Halloween img{
+	width: 100%;
+	box-shadow: 5px 5px 15px #0D2E4A;
+}
+
+.imageRow p{
 	font-size: 0px;
 	margin-right: 20px;
 }
-#imageBox p{
+.imageBox p{
 	font-size: 18px;
 	margin-top: 5px;
 	margin-left: 15px;
