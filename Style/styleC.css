@@ -1,0 +1,92 @@
+.mainBodyC{
+    background-color: #FFFAFA;
+    box-shadow: 5px 5px 15px #CFCFCF;
+}
+.mainBodyC_Halloween{
+    background-color: #1D3E5A;
+    box-shadow: 5px 5px 15px #0D2E4A;
+}
+
+.titleC{
+    background-color: #FFEEEE;
+    border: 2px #EFDFDF;
+    border-style: none none solid none;
+}
+.titleC_Halloween{
+    background-color: #0D2E4A;
+    border: 2px #001E3A;
+    border-style: none none solid none;
+}
+
+.headingC{
+    background-color: #FFFEFE;
+    border: 2px #EFDFDF;
+    border-style: none none solid none;
+}
+.headingC_Halloween{
+    background-color: #1D3E5A;
+    border: 2px #001E3A;
+    border-style: none none solid none;
+}
+
+.headerItemC{
+    background-color: #FFEEEE;
+    border: 2px #EFDFDF;
+    border-style: none none solid none;
+}
+.headerItemC img:hover{
+	background-color: #DFCFCF;
+}
+.headerItemC_Halloween{
+    background-color: #0D2E4A;
+    border: 2px #001E3A;
+    border-style: none none solid none;
+}
+.headerItemC_Halloween img:hover{
+	background-color: #001E3A;
+}
+
+.currentPageC{
+	background-color: #EFDFDF;
+}
+.currentPageC_Halloween{
+	background-color: #001E3A;
+}
+
+.sectionImageC img{
+    box-shadow: 3px 3px 10px #CFCFCF;
+}
+.sectionImageC_Halloween img{
+    box-shadow: 3px 3px 10px #0D2E4A;
+}
+
+.sectionTextC{
+    border: 2px dashed #FFDFDF;
+}
+.sectionTextC_Halloween{
+    border: 2px dashed #001E3A;
+}
+
+.sectionC{
+    border: 2px dashed #FFDFDF;
+}
+.sectionC h1{
+    text-decoration: underline;
+}
+.sectionC_Halloween{
+	border: 2px dashed #001E3A;
+}
+.sectionC_Halloween h1{
+	text-decoration: underline;
+}
+
+.imageRowC img{
+    box-shadow: 5px 5px 15px #CFCFCF;
+}
+.imageRowC_Halloween img{
+	box-shadow: 5px 5px 15px #0D2E4A;
+}
+
+.imageBoxC p{
+    color: #999999;
+}

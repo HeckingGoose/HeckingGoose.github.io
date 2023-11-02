@@ -5,17 +5,18 @@ const month = date.getMonth();
 const day = date.getDate();
 
 // Fetch singular objects
-var mainBody = document.querySelector('.mainBody');
-var heading = document.querySelector('.heading');
-var title = document.querySelector('.title');
-var currentPage = document.querySelector('.currentPage');
+var mainBody = document.querySelector('.mainBodyC');
+var heading = document.querySelector('.headingC');
+var title = document.querySelector('.titleC');
+var currentPage = document.querySelector('.currentPageC');
+var siteTree = document.querySelector('.siteTreeC');
 
 // Fetch plural objects
-var headerItem = document.querySelectorAll('.headerItem');
-var section = document.querySelectorAll('.section');
-var sectionImage = document.querySelectorAll('.sectionImage');
-var sectionText = document.querySelectorAll('.sectionText');
-var imageRow = document.querySelectorAll('.imageRow');
+var headerItem = document.querySelectorAll('.headerItemC');
+var section = document.querySelectorAll('.sectionC');
+var sectionImage = document.querySelectorAll('.sectionImageC');
+var sectionText = document.querySelectorAll('.sectionTextC');
+var imageRow = document.querySelectorAll('.imageRowC');
 
 // Fetch tags
 var link = document.getElementsByTagName('a');
@@ -49,49 +50,54 @@ switch (year)
                         document.body.style.backgroundColor = '#2E364E';
                         if (mainBody != null)
                         {
-                            mainBody.classList.remove('mainBody');
-                            mainBody.classList.add('mainBody_Halloween');
+                            mainBody.classList.remove('mainBodyC');
+                            mainBody.classList.add('mainBodyC_Halloween');
                         }
                         if (heading != null)
                         {
-                            heading.classList.remove('heading');
-                            heading.classList.add('heading_Halloween');
+                            heading.classList.remove('headingC');
+                            heading.classList.add('headingC_Halloween');
                         }
                         if (title != null)
                         {
-                            title.classList.remove('title');
-                            title.classList.add('title_Halloween');
+                            title.classList.remove('titleC');
+                            title.classList.add('titleC_Halloween');
                         }
                         if (currentPage != null)
                         {
-                            currentPage.classList.remove('currentPage');
-                            currentPage.classList.add('currentPage_Halloween');
+                            currentPage.classList.remove('currentPageC');
+                            currentPage.classList.add('currentPageC_Halloween');
+                        }
+                        if (siteTree != null)
+                        {
+                            siteTree.classList.remove('siteTreeC');
+                            siteTree.classList.add('siteTreeC_Halloween');
                         }
 
                         for (var i = 0; i < headerItem.length; i++)
                         {
-                            headerItem[i].classList.remove('headerItem');
-                            headerItem[i].classList.add('headerItem_Halloween');
+                            headerItem[i].classList.remove('headerItemC');
+                            headerItem[i].classList.add('headerItemC_Halloween');
                         }
                         for (var i = 0; i < section.length; i++)
                         {
-                            section[i].classList.remove('section');
-                            section[i].classList.add('section_Halloween');
+                            section[i].classList.remove('sectionC');
+                            section[i].classList.add('sectionC_Halloween');
                         }
                         for (var i = 0; i < sectionImage.length; i++)
                         {
-                            sectionImage[i].classList.remove('sectionImage');
-                            sectionImage[i].classList.add('sectionImage_Halloween');
+                            sectionImage[i].classList.remove('sectionImageC');
+                            sectionImage[i].classList.add('sectionImageC_Halloween');
                         }
                         for (var i = 0; i < sectionText.length; i++)
                         {
-                            sectionText[i].classList.remove('sectionText');
-                            sectionText[i].classList.add('sectionText_Halloween');
+                            sectionText[i].classList.remove('sectionTextC');
+                            sectionText[i].classList.add('sectionTextC_Halloween');
                         }
                         for (var i = 0; i < imageRow.length; i++)
                         {
-                            imageRow[i].classList.remove('imageRow');
-                            imageRow[i].classList.add('imageRow_Halloween');
+                            imageRow[i].classList.remove('imageRowC');
+                            imageRow[i].classList.add('imageRowC_Halloween');
                         }
 
                         // Set text colours
