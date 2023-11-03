@@ -4,3 +4,9 @@
 .heading h3{
 	font-size: 30px;
 }
+body{
+	background-image: url('../../../Img/Games/Dreaming/DreamingBackground.png');
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+}
