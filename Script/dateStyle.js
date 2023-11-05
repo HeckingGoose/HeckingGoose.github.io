@@ -30,6 +30,9 @@ var h4 = document.getElementsByTagName('h4');
 var h5 = document.getElementsByTagName('h5');
 var h6 = document.getElementsByTagName('h6');
 
+// Set theme
+var theme = "";
+
 // Apply custom styles based on current date
 switch (year)
 {
@@ -46,59 +49,9 @@ switch (year)
                     case 1: // Birthday
                         break;
                     case 31: // Halloween
-                        // Set classes and background colour
+                        // Set theme and background colour
                         document.body.style.backgroundColor = '#2E364E';
-                        if (mainBody != null)
-                        {
-                            mainBody.classList.remove('mainBodyC');
-                            mainBody.classList.add('mainBodyC_Halloween');
-                        }
-                        if (heading != null)
-                        {
-                            heading.classList.remove('headingC');
-                            heading.classList.add('headingC_Halloween');
-                        }
-                        if (title != null)
-                        {
-                            title.classList.remove('titleC');
-                            title.classList.add('titleC_Halloween');
-                        }
-                        if (currentPage != null)
-                        {
-                            currentPage.classList.remove('currentPageC');
-                            currentPage.classList.add('currentPageC_Halloween');
-                        }
-                        if (siteTree != null)
-                        {
-                            siteTree.classList.remove('siteTreeC');
-                            siteTree.classList.add('siteTreeC_Halloween');
-                        }
-
-                        for (var i = 0; i < headerItem.length; i++)
-                        {
-                            headerItem[i].classList.remove('headerItemC');
-                            headerItem[i].classList.add('headerItemC_Halloween');
-                        }
-                        for (var i = 0; i < section.length; i++)
-                        {
-                            section[i].classList.remove('sectionC');
-                            section[i].classList.add('sectionC_Halloween');
-                        }
-                        for (var i = 0; i < sectionImage.length; i++)
-                        {
-                            sectionImage[i].classList.remove('sectionImageC');
-                            sectionImage[i].classList.add('sectionImageC_Halloween');
-                        }
-                        for (var i = 0; i < sectionText.length; i++)
-                        {
-                            sectionText[i].classList.remove('sectionTextC');
-                            sectionText[i].classList.add('sectionTextC_Halloween');
-                        }
-                        for (var i = 0; i < imageRow.length; i++)
-                        {
-                            imageRow[i].classList.remove('imageRowC');
-                            imageRow[i].classList.add('imageRowC_Halloween');
-                        }
+                        theme = "Halloween";
 
                         // Set text colours
                         SetTextColour(
@@ -117,6 +70,32 @@ switch (year)
         }
         break;
 }
+
+// Apply themes
+if (theme != "")
+{
+    ApplyElementTheme("mainBodyC", theme);
+    ApplyElementTheme("headingC", theme);
+    ApplyElementTheme("titleC", theme);
+    ApplyElementTheme("currentPageC", theme);
+    ApplyElementTheme("siteTreeC", theme);
+    ApplyElementTheme("headerItemC", theme);
+    ApplyElementTheme("sectionC", theme);
+    ApplyElementTheme("sectionImageC", theme);
+    ApplyElementTheme("sectionTextC", theme);
+    ApplyElementTheme("imageRowC", theme);
+}
+
+function ApplyElementTheme(elementName, theme)
+{
+    var elements = document.querySelectorAll("." + elementName);
+    for (var i = 0; i < elements.length; i++)
+    {
+        elements[i].classList.remove(elementName);
+        elements[i].classList.add(elementName + "_" + theme);
+    }
+}
+
 function SetTextColour(aC, pC, ulC, liC, h1C, h2C, h3C, h4C, h5C, h6C)
 {
     for (var i = 0; i < link.length; i++)
