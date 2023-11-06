@@ -66,7 +66,30 @@ switch (year)
                             '#FFFFFF', // h5
                             '#FFFFFF' // h6
                             );
+                        break;
                 }
+            case 11: // December
+                if (day < 27) // Christmas zone
+                {
+                    // Set theme and background colour
+                    document.body.style.backgroundColor = '#BCEDE3';
+                    theme = "Christmas";
+
+                    // Set text colours
+                    SetTextColour(
+                        '#F00000', // a
+                        '#1F1111', // p
+                        '#1F1111', // ul
+                        '#1F1111', // li
+                        '#1F1111', // h1
+                        '#1F1111', // h2
+                        '#1F1111', // h3
+                        '#1F1111', // h4
+                        '#1F1111', // h5
+                        '#1F1111' // h6
+                        );
+                }
+                break;
         }
         break;
 }
