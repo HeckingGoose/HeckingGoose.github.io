@@ -10,6 +10,10 @@
     background-color: #DEFFF9;
     box-shadow: 5px 5px 15px #9CC4BC;
 }
+.mainBodyC_Autumn{
+    background-color: #BD5D61;
+    box-shadow: 5px 5px 15px #5A4548;
+}
 
 .titleC{
     background-color: #FFEEEE;
@@ -26,6 +30,11 @@
     border: 2px #AAC6C1;
     border-style: none none solid none;
 }
+.titleC_Autumn{
+    background-color: #80464F;
+    border: 2px #70363F;
+    border-style: none none solid none;
+}
 
 .headingC{
     background-color: #FFFEFE;
@@ -40,6 +49,11 @@
 .headingC_Christmas{
     background-color: #BAD6D1;
     border: 2px #AAC6C1;
+    border-style: none none solid none;
+}
+.headingC_Autumn{
+    background-color: #80464F;
+    border: 2px #70363F;
     border-style: none none solid none;
 }
 
@@ -67,6 +81,14 @@
 .headerItemC_Christmas img:hover{
 	background-color: #AAC6C1;
 }
+.headerItemC_Autumn{
+    background-color: #80464F;
+    border: 2px #70363F;
+    border-style: none none solid none;
+}
+.headerItemC_Autumn img:hover{
+    background-color: #70363F;
+}
 
 .currentPageC{
 	background-color: #EFDFDF;
@@ -76,6 +98,9 @@
 }
 .currentPageC_Christmas{
 	background-color: #AAC6C1;
+}
+.currentPageC_Autumn{
+    background-color: #70363F;
 }
 
 .sectionImageC img{
@@ -87,6 +112,9 @@
 .sectionImageC_Christmas img{
     box-shadow: 3px 3px 10px #9CC4BC;
 }
+.sectionImageC_Autumn img{
+    box-shadow: 3px 3px 10px #5A4548;
+}
 
 .sectionTextC{
     border: 2px dashed #FFDFDF;
@@ -96,6 +124,9 @@
 }
 .sectionTextC_Christmas{
     border: 2px dashed #AAC6C1;
+}
+.sectionTextC_Autumn{
+    border: 2px dashed #70363F;
 }
 
 .sectionC{
@@ -116,6 +147,12 @@
 .sectionC_Christmas h1{
 	text-decoration: underline;
 }
+.sectionC_Autumn{
+    border: 2px dashed #70363F;
+}
+.sectionC_Autumn h1{
+    text-decoration: underline;
+}
 
 .imageRowC img{
     box-shadow: 5px 5px 15px #CFCFCF;
@@ -125,6 +162,9 @@
 }
 .imageRowC_Christmas img{
 	box-shadow: 5px 5px 15px #9CC4BC;
+}
+.imageRowC_Autumn img{
+    box-shadow: 5px 5px 15px #5A4548;
 }
 
 .imageBoxC p{

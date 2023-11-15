@@ -1,3 +1,5 @@
+// Autumn: September 1st - November 30th
+
 // Fetch date
 const date = new Date();
 const year = date.getFullYear();
@@ -17,6 +19,7 @@ var section = document.querySelectorAll('.sectionC');
 var sectionImage = document.querySelectorAll('.sectionImageC');
 var sectionText = document.querySelectorAll('.sectionTextC');
 var imageRow = document.querySelectorAll('.imageRowC');
+//var imageBox = document.querySelectorAll('.imageBoxC'); <- overwritten by font override
 
 // Fetch tags
 var link = document.getElementsByTagName('a');
@@ -41,10 +44,46 @@ switch (year)
         {
             default:
                 break;
+            case 8: // September
+                // Set theme and background colour
+                document.body.style.backgroundColor = '#88575F';
+                theme = "Autumn";
+
+                // Set text colours
+                SetTextColour(
+                    '#FFDDDD', // a
+                    '#FFFFFF', // p
+                    '#FFFFFF', // ul
+                    '#FFFFFF', // li
+                    '#FFFFFF', // h1
+                    '#FFFFFF', // h2
+                    '#FFFFFF', // h3
+                    '#FFFFFF', // h4
+                    '#FFFFFF', // h5
+                    '#FFFFFF' // h6
+                    );
+                break;
             case 9: // October
                 switch (day)
                 {
                     default:
+                        // Set theme and background colour
+                        document.body.style.backgroundColor = '#88575F';
+                        theme = "Autumn";
+
+                        // Set text colours
+                        SetTextColour(
+                            '#FFDDDD', // a
+                            '#FFFFFF', // p
+                            '#FFFFFF', // ul
+                            '#FFFFFF', // li
+                            '#FFFFFF', // h1
+                            '#FFFFFF', // h2
+                            '#FFFFFF', // h3
+                            '#FFFFFF', // h4
+                            '#FFFFFF', // h5
+                            '#FFFFFF' // h6
+                            );
                         break;
                     case 1: // Birthday
                         break;
@@ -68,6 +107,25 @@ switch (year)
                             );
                         break;
                 }
+            case 10: // November
+                // Set theme and background colour
+                document.body.style.backgroundColor = '#88575F';
+                theme = "Autumn";
+
+                // Set text colours
+                SetTextColour(
+                    '#FFDDDD', // a
+                    '#FFFFFF', // p
+                    '#FFFFFF', // ul
+                    '#FFFFFF', // li
+                    '#FFFFFF', // h1
+                    '#FFFFFF', // h2
+                    '#FFFFFF', // h3
+                    '#FFFFFF', // h4
+                    '#FFFFFF', // h5
+                    '#FFFFFF' // h6
+                    );
+                break;
             case 11: // December
                 if (day < 27) // Christmas zone
                 {
