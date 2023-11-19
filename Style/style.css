@@ -29,7 +29,7 @@ a:hover{
     margin-right: auto;
     display: flex;
     flex-direction: column;
-    padding-bottom: 200px;
+    padding-bottom: 40px;
 }
 .heading{
     display: flex;
