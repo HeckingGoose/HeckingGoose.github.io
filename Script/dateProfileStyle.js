@@ -29,7 +29,7 @@ switch (year)
             case 11: // December
                 if (day < 25) // Runup to Christmas
                 {
-
+                    profileImage.src = "Img/ChristmasLeadupProfile.png";
                 }
                 else if (day == 25) // Christmas day
                 {

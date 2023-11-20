@@ -3,7 +3,7 @@
 // Fetch date
 const date = new Date();
 const year = date.getFullYear();
-const month = date.getMonth();
+const month = 11//date.getMonth();
 const day = date.getDate();
 
 // Fetch singular objects
