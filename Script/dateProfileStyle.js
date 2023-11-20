@@ -33,7 +33,7 @@ switch (year)
                 }
                 else if (day == 25) // Christmas day
                 {
-
+                    profileImage.src = "Img/ChristmasProfile.png";
                 }
                 else if (day == 26) // Boxing day
                 {
