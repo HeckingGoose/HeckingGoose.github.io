@@ -5,5 +5,12 @@
 	margin-bottom:10px;
 	margin-left: 20px;
 	margin-right: 20px;
-	width: 512px;
+}
+@media (max-aspect-ratio: 1){
+	.siteTree h3{
+		font-size: 35px;
+	}
+	.siteTree li{
+		font-size: 35px;
+	}
 }

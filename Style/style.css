@@ -24,21 +24,21 @@ a:hover{
     text-decoration: underline #000000;
 }
 .mainBody{
-    width:1080px;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 40px;
+	width:1080px;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	flex-direction: column;
+	padding-bottom: 40px;
 }
 .heading{
-    display: flex;
-    flex-direction: row;
+	display: flex;
+	flex-direction: row;
 }
 .title{
-    margin-left: 0px;
-    width: 540px;
-    height: 180px;
+	margin-left: 0px;
+	width: 540px;
+	height: 180px;
 }
 .title h1{
 	text-align: center;
@@ -51,8 +51,8 @@ a:hover{
 	margin: 0px;
 }
 .headerItem{
-    width: 180px;
-    height: 180px;
+	width: 180px;
+	height: 180px;
 }
 .headerItem img{
 	width: 180px;
@@ -60,22 +60,11 @@ a:hover{
 }
 .profile{
 	display: flex;
-	flex-direction:row;
 	margin-top: 10px;
 	margin-bottom:10px;
 	margin-left: 40px;
 	margin-right: 40px;
 	width: 1000px;
-	height: 256px;
-}
-.sectionImage img{
-	width: 256px;
-	height: 256px;
-	margin-left: 4px;
-}
-.sectionText{
-	width: 780px;
-	height: 256px;
 }
 .sectionText h3{
 	margin-top: 5px;
@@ -99,8 +88,6 @@ a:hover{
 	margin-top: 20px;
 }
 .imageRow{
-	display: flex;
-	flex-direction: row;
 	width: 960px;
 	margin-left: 20px;
 	margin-right: 20px;
@@ -113,8 +100,72 @@ a:hover{
 	margin-right: 20px;
 }
 .imageBox p{
-	font-size: 18px;
 	margin-top: 5px;
 	margin-left: 15px;
 	margin-bottom: 0px;
+}
+
+@media (max-aspect-ratio: 1)
+{
+	.profile{
+		flex-direction: column-reverse;
+	}
+	.sectionImage{
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.sectionImage img{
+		width: 512px;
+		height: 512px;
+		margin: 10px;
+	}
+	.sectionText{
+		align-items: center;
+	}
+	.sectionText h3{
+		font-size: 35px;
+	}
+	.sectionText li{
+		font-size: 35px;
+	}
+	.section h1{
+		font-size: 60px;
+	}
+	.section h2{
+		font-size: 50px;
+	}
+	.section h3{
+		font-size: 35px;
+	}
+	.section li{
+		font-size: 35px;
+	}
+	.imageRow{
+		display: flex;
+		flex-direction: column;
+	}
+	.imageBox p{
+		font-size: 25px;
+	}
+}
+@media (min-aspect-ratio: 1)
+{
+	.profile{
+		flex-direction:row;
+	}
+	.sectionImage img{
+		width: 256px;
+		height: 256px;
+		margin-left: 4px;
+	}
+	.sectionText{
+		width: 780px;
+	}
+	.imageRow{
+		display: flex;
+		flex-direction: row;
+	}
+	.imageBox p{
+		font-size: 18px;
+	}
 }
