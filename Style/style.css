@@ -2,19 +2,13 @@
 h1, h2, h3, h4, h5, h6, p, a, ul, li{
     font-family: 'Indie Flower';
 }
-h3, p{
-	margin-top: 10px;
-	margin-bottom: 10px;
-	margin-left: 10px;
-	margin-right: 10px;
-}
 li{
-	font-size: 20px;
 	list-style-image: url('../Img/UI/ListMarker.png');
 }
 ul{
-	margin: 0px;
+	margin: 0%;
 }
+/* Move these colours into seasonal styling */
 a{
     color: #5F5F5F;
     text-decoration: none;
@@ -24,47 +18,31 @@ a:hover{
     text-decoration: underline #000000;
 }
 .mainBody{
-	width:1080px;
 	margin-left: auto;
 	margin-right: auto;
 	display: flex;
 	flex-direction: column;
-	padding-bottom: 40px;
 }
 .heading{
+	display: flex;
+}
+.headerItems{
 	display: flex;
 	flex-direction: row;
 }
 .title{
-	margin-left: 0px;
-	width: 540px;
-	height: 180px;
+	margin-left: 0%;
 }
 .title h1{
 	text-align: center;
-	font-size: 70px;
-	margin: 0px;
+	margin: 0%;
 }
 .title h3{
 	text-align: center;
-	font-size: 40px;
-	margin: 0px;
-}
-.headerItem{
-	width: 180px;
-	height: 180px;
-}
-.headerItem img{
-	width: 180px;
-	height: 180px;
+	margin: 0%;
 }
 .profile{
 	display: flex;
-	margin-top: 10px;
-	margin-bottom:10px;
-	margin-left: 40px;
-	margin-right: 40px;
-	width: 1000px;
 }
 .sectionText h3{
 	margin-top: 5px;
@@ -73,85 +51,186 @@ a:hover{
 .section{
 	display: flex;
 	flex-direction: column;
-	width: 1000px;
-	margin-left: 40px;
-	margin-right: 40px;
-	margin-top: 40px;
-}
-.section h1{
-	margin-left: 30px;
 }
 .section h2{
-	margin-left: 30px;
-	margin-bottom: 0px;
-	margin-left: 20px;
-	margin-top: 20px;
+	margin-bottom: 0%;
 }
 .imageRow{
-	width: 960px;
-	margin-left: 20px;
-	margin-right: 20px;
+	display: flex;
 }
 .imageRow img{
 	width: 100%;
 }
 .imageRow p{
-	font-size: 0px;
-	margin-right: 20px;
+	font-size: 0%;
 }
 .imageBox p{
 	margin-top: 5px;
 	margin-left: 15px;
-	margin-bottom: 0px;
+	margin-bottom: 0%;
 }
 
 @media (max-aspect-ratio: 1)
 {
+	/* 
+		All values are scaled width-centric,
+		mostly because it's easier :)
+	*/
+	h3, p{
+		margin: 1vw;
+	}
+	.mainBody{
+		width: 100vw;
+		padding-bottom: 3.7vw;
+	}
+	.title{
+		width: 100vw;
+		height: 25vw;
+	}
+	.title h1{
+		font-size: 10vw;
+	}
+	.title h3{
+		font-size: 5vw;
+	}
+	.heading{
+		flex-direction: column;
+	}
+	.headerItem{
+		width: 33.3vw;
+		height: 33.3vw;
+	}
+	.headerItem img{
+		width: 33.3vw;
+		height: 33.3vw;
+	}
 	.profile{
 		flex-direction: column-reverse;
+		margin-left: 4vw;
+		margin-right: 4vw;
+		margin-top: 2vw;
+		margin-bottom: 2vw;
 	}
 	.sectionImage{
 		margin-left: auto;
 		margin-right: auto;
 	}
 	.sectionImage img{
-		width: 512px;
-		height: 512px;
-		margin: 10px;
+		width: 75vw;
+		height: 75vw;
 	}
 	.sectionText{
-		align-items: center;
+		width: auto;
 	}
 	.sectionText h3{
-		font-size: 35px;
+		font-size: 4vw;
 	}
 	.sectionText li{
-		font-size: 35px;
+		font-size: 4vw;
+	}
+	.section{
+		width: auto;
+		margin-top: 4vw;
+		margin-left: 4vw;
+		margin-right: 4vw;
 	}
 	.section h1{
-		font-size: 60px;
+		font-size: 8vw;
+		margin-left: 4vw;
 	}
 	.section h2{
-		font-size: 50px;
+		font-size: 7vw;
+		margin-left: 3.5vw;
+		margin-left: 3vw;
+		margin-top: 3vw;
 	}
 	.section h3{
-		font-size: 35px;
+		font-size: 4vw;
 	}
 	.section li{
-		font-size: 35px;
+		font-size: 4vw;
 	}
 	.imageRow{
-		display: flex;
 		flex-direction: column;
+		width: auto;
+		margin-left: 3vw;
+		margin-right: 3vw;
 	}
 	.imageBox p{
-		font-size: 25px;
+		font-size: 3vw;
+		margin-right: 3vw;
+		margin-top: 1vw;
+		margin-left: 2.5vw;
+	}
+	.imageBox iframe{
+		/* Scaled for 16:9 */
+		width: 85vw;
+		height: 47.8125vw;
 	}
 }
 @media (min-aspect-ratio: 1)
 {
+	h3, p{
+		margin: 10px;
+	}
+	.mainBody{
+		width:1080px;
+		padding-bottom: 40px;
+	}
+	.title{
+		width: 540px;
+		height: 180px;
+	}
+	.title h1{
+		font-size: 70px;
+	}
+	.title h3{
+		font-size: 40px;
+	}
+	.heading{
+		flex-direction: row;
+	}
+	.headerItem{
+		width: 180px;
+		height: 180px;
+	}
+	.headerItem img{
+		width: 180px;
+		height: 180px;
+	}
 	.profile{
 		flex-direction:row;
+		margin-top: 10px;
+		margin-bottom:10px;
+		margin-left: 40px;
+		margin-right: 40px;
+		width: 1000px;
+	}
+	.section{
+		width: 1000px;
+		margin-left: 40px;
+		margin-right: 40px;
+		margin-top: 40px;
+	}
+	.section h1{
+		margin-left: 30px;
+	}
+	.section h2{
+		margin-left: 30px;
+		margin-left: 20px;
+		margin-top: 20px;
+	}
+	.imageRow{
+		width: 960px;
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+	.imageRow p{
+		margin-right: 20px;
+	}
+	.imageBox p{
+		margin-top: 5px;
+		margin-left: 15px;
 	}
 	.sectionImage img{
 		width: 256px;
@@ -162,10 +241,13 @@ a:hover{
 		width: 780px;
 	}
 	.imageRow{
-		display: flex;
 		flex-direction: row;
 	}
 	.imageBox p{
 		font-size: 18px;
+	}
+	.imageBox iframe{
+		width: 960px;
+		height: 540px;
 	}
 }

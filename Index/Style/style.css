@@ -1,16 +1,26 @@
 .siteTree{
 	display: flex;
 	flex-direction:column;
-	margin-top: 10px;
-	margin-bottom:10px;
-	margin-left: 20px;
-	margin-right: 20px;
 }
 @media (max-aspect-ratio: 1){
+	.siteTree{
+		margin-top: 2vw;
+		margin-bottom: 2vw;
+		margin-left: 4vw;
+		margin-right: 4vw;
+	}
 	.siteTree h3{
-		font-size: 35px;
+		font-size: 4vw;
 	}
 	.siteTree li{
-		font-size: 35px;
+		font-size: 4vw;
+	}
+}
+@media (min-aspect-ratio: 1){
+	.siteTree{
+		margin-top: 10px;
+		margin-bottom: 10px;
+		margin-left: 20px;
+		margin-right: 20px;
 	}
 }
