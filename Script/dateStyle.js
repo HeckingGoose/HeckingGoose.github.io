@@ -44,6 +44,30 @@ switch (year)
         {
             default:
                 break;
+            case 1: // February
+                switch (day)
+                {
+                    case 14:
+                        // Set theme and background colour
+                        document.body.style.backgroundColor = '#C9B1C7';
+                        theme = "Valentine";
+
+                        // Set text colours
+                        SetTextColour(
+                            '#FFDDDD', // a
+                            '#FFFFFF', // p
+                            '#FFFFFF', // ul
+                            '#FFFFFF', // li
+                            '#FFFFFF', // h1
+                            '#FFFFFF', // h2
+                            '#FFFFFF', // h3
+                            '#FFFFFF', // h4
+                            '#FFFFFF', // h5
+                            '#FFFFFF' // h6
+                            );
+                        break;
+                }
+                break;
             case 8: // September
                 // Set theme and background colour
                 document.body.style.backgroundColor = '#88575F';
