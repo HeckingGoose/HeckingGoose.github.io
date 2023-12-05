@@ -23,4 +23,11 @@
 		margin-left: 20px;
 		margin-right: 20px;
 	}
+	.siteTree h3{
+		margin-left: 20px;
+		font-size: 1.17rem;
+	}
+	.siteTree li{
+		font-size: 1.17rem;
+	}
 }
