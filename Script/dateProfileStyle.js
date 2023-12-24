@@ -45,7 +45,7 @@ switch (year)
                 }
                 else if (day == 26) // Boxing day
                 {
-                    
+                    profileImage.src = "Img/ChristmasOverProfile.png";
                 }
                 break;
         }
