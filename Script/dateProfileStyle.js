@@ -47,6 +47,10 @@ switch (year)
                 {
                     profileImage.src = "Img/ChristmasOverProfile.png";
                 }
+                else if (day == 31) // New year's eve
+                {
+                    profileImage.src = "Img/NewYearEveProfile.png";
+                }
                 break;
         }
         break;

@@ -4,7 +4,7 @@
 const date = new Date();
 const year = date.getFullYear();
 const month = date.getMonth();
-const day = date.getDate();
+const day = 31//date.getDate();
 
 // Fetch singular objects
 var mainBody = document.querySelector('.mainBodyC');
@@ -170,6 +170,26 @@ switch (year)
                         '#1F1111', // h5
                         '#1F1111' // h6
                         );
+                }
+                else if (day == 31) // New year's eve
+                {
+                // Set theme and background colour
+                document.body.style.backgroundColor = '#FFFFFF';
+                theme = "NewYearEve";
+                
+                // Set text colours
+                SetTextColour(
+                    '#444444', // a
+                    '#000000', // p
+                    '#000000', // ul
+                    '#000000', // li
+                    '#000000', // h1
+                    '#000000', // h2
+                    '#000000', // h3
+                    '#000000', // h4
+                    '#000000', // h5
+                    '#000000' // h6
+                    );
                 }
                 break;
         }
