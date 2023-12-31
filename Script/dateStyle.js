@@ -4,7 +4,7 @@
 const date = new Date();
 const year = date.getFullYear();
 const month = date.getMonth();
-const day = date.getDate();
+const day =  date.getDate();
 
 // Fetch singular objects
 var mainBody = document.querySelector('.mainBodyC');
@@ -44,6 +44,28 @@ switch (year)
         {
             default:
                 break;
+            case 0: // January
+                switch (day)
+                {
+                    case 1: // New years day
+                        // Set theme and background colour
+                        document.body.style.backgroundColor = '#88575F';
+                        theme = "Autumn";
+
+                        // Set text colours
+                        SetTextColour(
+                            '#FFDDDD', // a
+                            '#FFFFFF', // p
+                            '#FFFFFF', // ul
+                            '#FFFFFF', // li
+                            '#FFFFFF', // h1
+                            '#FFFFFF', // h2
+                            '#FFFFFF', // h3
+                            '#FFFFFF', // h4
+                            '#FFFFFF', // h5
+                            '#FFFFFF' // h6
+                            );
+                }
             case 1: // February
                 switch (day)
                 {

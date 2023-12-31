@@ -9,11 +9,17 @@ switch (year)
         {
             default:
                 break;
+            case 0: // January
+                switch (day)
+                {
+                    case 1: // New years day
+                        profileImage.src = "Img/NewYearProfile.png";
+                }
             case 1: // February
                 switch (day)
                 {
                     case 14:
-                        profileImage.src = "Img/ValentineProfile.png"
+                        profileImage.src = "Img/ValentineProfile.png";
                         break;
                 }
                 break;
