@@ -4,7 +4,7 @@
 const date = new Date();
 const year = date.getFullYear();
 const month = date.getMonth();
-const day = 31//date.getDate();
+const day = date.getDate();
 
 // Fetch singular objects
 var mainBody = document.querySelector('.mainBodyC');
