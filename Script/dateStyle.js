@@ -112,25 +112,6 @@ switch (year)
             case 9: // October
                 switch (day)
                 {
-                    default:
-                        // Set theme and background colour
-                        document.body.style.backgroundColor = '#88575F';
-                        theme = "Autumn";
-
-                        // Set text colours
-                        SetTextColour(
-                            '#FFDDDD', // a
-                            '#FFFFFF', // p
-                            '#FFFFFF', // ul
-                            '#FFFFFF', // li
-                            '#FFFFFF', // h1
-                            '#FFFFFF', // h2
-                            '#FFFFFF', // h3
-                            '#FFFFFF', // h4
-                            '#FFFFFF', // h5
-                            '#FFFFFF' // h6
-                            );
-                        break;
                     case 1: // Birthday
                         break;
                     case 31: // Halloween
@@ -152,7 +133,27 @@ switch (year)
                             '#FFFFFF' // h6
                             );
                         break;
+                    default:
+                        // Set theme and background colour
+                        document.body.style.backgroundColor = '#88575F';
+                        theme = "Autumn";
+
+                        // Set text colours
+                        SetTextColour(
+                            '#FFDDDD', // a
+                            '#FFFFFF', // p
+                            '#FFFFFF', // ul
+                            '#FFFFFF', // li
+                            '#FFFFFF', // h1
+                            '#FFFFFF', // h2
+                            '#FFFFFF', // h3
+                            '#FFFFFF', // h4
+                            '#FFFFFF', // h5
+                            '#FFFFFF' // h6
+                            );
+                        break;
                 }
+                break;
             case 10: // November
                 // Set theme and background colour
                 document.body.style.backgroundColor = '#88575F';

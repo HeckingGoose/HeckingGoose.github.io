@@ -192,12 +192,14 @@ a:hover{
 		flex-direction: row;
 	}
 	.headerItems{
-		width: 50%;
+		min-width: 50%;
+		max-width: 51%;
 		height: 180px;
 		max-height: 16.5vw;
 	}
 	.headerItem{
-		width: 33.3%;
+		max-width: 35%;
+		min-width: 33%;
 		height: 100%;
 	}
 	.headerItem img{

@@ -29,19 +29,21 @@ switch (year)
             case 9: // October
                 switch (day)
                 {
-                    default: // Autumn
-                        profileImage.src = "Img/AutumnProfile.png";
-                        break;
                     case 1: // Birthday
                         break;
                     case 31: // Halloween
                         profileImage.src = "Img/HalloweenProfile.png";
+                        break;
+                    default: // Autumn
+                        profileImage.src = "Img/AutumnProfile.png";
+                        break;
                 }
+                break;
             case 10: // November
                 profileImage.src = "Img/AutumnProfile.png";
                 break;
             case 11: // December
-                if (day < 25) // Runup to Christmas
+                if (day < 25) // Run up to Christmas
                 {
                     profileImage.src = "Img/ChristmasLeadupProfile.png";
                 }
