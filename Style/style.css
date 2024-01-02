@@ -190,6 +190,7 @@ a:hover{
 	}
 	.heading{
 		flex-direction: row;
+		margin-bottom: min(10px, 1vw);
 	}
 	.headerItems{
 		min-width: 50%;
