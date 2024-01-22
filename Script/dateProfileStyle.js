@@ -30,6 +30,7 @@ switch (year)
                 switch (day)
                 {
                     case 1: // Birthday
+                        profileImage.src = "Img/BirthdayProfile.png";
                         break;
                     case 31: // Halloween
                         profileImage.src = "Img/HalloweenProfile.png";

@@ -22,6 +22,10 @@
     background-color: #DDDDDD;
     box-shadow: 5px 5px 15px #000000;
 }
+.mainBodyC_Birthday{
+    background-color: #202040;
+    box-shadow: 5px 5px 15px #181838;
+}
 
 .titleC{
     background-color: #FFEEEE;
@@ -53,6 +57,11 @@
     border: 2px #9A9A9A;
     border-style: none none solid none;
 }
+.titleC_Birthday{
+    background-color: #181838;
+    border: 2px #080828;
+    border-style: none none solid none;
+}
 
 .headingC{
     background-color: #FFFEFE;
@@ -82,6 +91,11 @@
 .headingC_NewYearEve{
     background-color: #AAAAAA;
     border: 2px #9A9A9A;
+    border-style: none none solid none;
+}
+.headingC_Birthday{
+    background-color: #181838;
+    border: 2px #080828;
     border-style: none none solid none;
 }
 
@@ -133,6 +147,14 @@
 .headerItemC_NewYearEve img:hover{
     background-color: #9A9A9A;
 }
+.headerItemC_Birthday{
+    background-color: #181838;
+    border: 2px #080828;
+    border-style: none none solid none;
+}
+.headerItemC_Birthday img:hover{
+    background-color: #080828;
+}
 
 .currentPageC{
 	background-color: #EFDFDF;
@@ -151,6 +173,9 @@
 }
 .currentPageC_NewYearEve{
     background-color: #9A9A9A;
+}
+.currentPageC_Birthday{
+    background-color: #080828;
 }
 
 .sectionImageC img{
@@ -171,6 +196,9 @@
 .sectionImageC_NewYearEve img{
     box-shadow: 3px 3px 10px #AAAAAA;
 }
+.sectionImageC_Birthday img{
+    box-shadow: 3px 3px 10px #080828;
+}
 
 .sectionTextC{
     border: 2px dashed #FFDFDF;
@@ -189,6 +217,9 @@
 }
 .sectionTextC_NewYearEve{
     border: 2px dashed #9A9A9A;
+}
+.sectionTextC_Birthday{
+    border: 2px dashed #080828;
 }
 
 .sectionC{
@@ -227,6 +258,12 @@
 .sectionC_NewYearEve h1{
     text-decoration: underline;
 }
+.sectionC_Birthday{
+    border: 2px dashed #080828;
+}
+.sectionC_Birthday h1{
+    text-decoration: underline;
+}
 
 .imageRowC img{
     box-shadow: 5px 5px 15px #CFCFCF;
@@ -245,6 +282,9 @@
 }
 .imageRowC_NewYearEve img{
     box-shadow: 5px 5px 15px #AAAAAA;
+}
+.imageRowC_Birthday img{
+    box-shadow: 5px 5px 15px #080828;
 }
 
 .imageBoxC p{

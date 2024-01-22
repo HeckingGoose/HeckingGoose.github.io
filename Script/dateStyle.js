@@ -113,6 +113,23 @@ switch (year)
                 switch (day)
                 {
                     case 1: // Birthday
+                        // Set theme and background colour
+                        document.body.style.backgroundColor = '#101030';
+                        theme = "Birthday";
+
+                        // Set text colours
+                        SetTextColour(
+                            '#7F7FFF', // a
+                            '#D8D8FF', // p
+                            '#D8D8FF', // ul
+                            '#D8D8FF', // li
+                            '#D8D8FF', // h1
+                            '#D8D8FF', // h2
+                            '#D8D8FF', // h3
+                            '#D8D8FF', // h4
+                            '#D8D8FF', // h5
+                            '#D8D8FF' // h6
+                            );
                         break;
                     case 31: // Halloween
                         // Set theme and background colour
