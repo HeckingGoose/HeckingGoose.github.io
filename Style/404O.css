@@ -1,0 +1,12 @@
+@media (max-aspect-ratio: 1)
+{
+    .title h3{
+		font-size: 5vw;
+	}
+}
+@media (min-aspect-ratio: 1)
+{
+    .title h3{
+        font-size: min(26px, 2.6vw);
+    }
+}
