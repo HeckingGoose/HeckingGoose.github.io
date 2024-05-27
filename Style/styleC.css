@@ -290,3 +290,25 @@
 .imageBoxC p{
     color: #999999;
 }
+
+.itemOverlayC{
+    background-color: #EFDFDF;
+}
+.itemOverlayC_Halloween{
+    background-color: #001E3A;
+}
+.itemOverlayC_Christmas{
+    background-color: #AAC6C1;
+}
+.itemOverlayC_Autumn{
+    background-color: #70363F;
+}
+.itemOverlayC_Valentine{
+    background-color: #655664;
+}
+.itemOverlayC_NewYearEve{
+    background-color: #9A9A9A;
+}
+.itemOverlayC_Birthday{
+    background-color: #080828;
+}

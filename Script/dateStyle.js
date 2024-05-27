@@ -19,6 +19,7 @@ var section = document.querySelectorAll('.sectionC');
 var sectionImage = document.querySelectorAll('.sectionImageC');
 var sectionText = document.querySelectorAll('.sectionTextC');
 var imageRow = document.querySelectorAll('.imageRowC');
+var itemOverlay = document.querySelector('.itemOverlayC');
 //var imageBox = document.querySelectorAll('.imageBoxC'); <- overwritten by font override
 
 // Fetch tags
@@ -249,6 +250,7 @@ if (theme != "")
     ApplyElementTheme("sectionImageC", theme);
     ApplyElementTheme("sectionTextC", theme);
     ApplyElementTheme("imageRowC", theme);
+    ApplyElementTheme("itemOverlayC", theme);
 }
 
 function ApplyElementTheme(elementName, theme)

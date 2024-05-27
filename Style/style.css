@@ -69,6 +69,50 @@ a:hover{
 	margin-left: 15px;
 	margin-bottom: 0%;
 }
+.contentGallery{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.galleryItem{
+	position: relative;
+}
+.galleryItem img{
+	display: block;
+}
+.itemOverlay{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	transition: 0.2s, ease;
+	align-content: center;
+}
+.itemOverlay h3{
+	text-align: center;
+	padding: 0px;
+	margin: 0px;
+}
+.itemOverlay p{
+	text-align: center;
+	padding: 0px;
+	margin: 0px;
+}
+
+.galleryItem:hover .itemOverlay{
+	opacity: 0.8;
+}
+.galleryItem:hover .itemOverlay h3{
+	opacity: 1;
+}
+.galleryItem:hover .itemOverlay p{
+	opacity: 1;
+}
 
 @media (max-aspect-ratio: 1)
 {
@@ -166,6 +210,23 @@ a:hover{
 		/* Scaled for 16:9 */
 		width: 85vw;
 		height: 47.8125vw;
+	}
+	.galleryItem{
+		margin: 1vw;
+		width: 40vw;
+	}
+	.galleryItem img{
+		width: 100%;
+		border-radius: 5vw;
+	}
+	.itemOverlay{
+		border-radius: 5vw;
+	}
+	.itemOverlay h3{
+		font-size: 5vw;
+	}
+	.itemOverlay p{
+		font-size:4vw;
 	}
 }
 @media (min-aspect-ratio: 1)
@@ -278,5 +339,22 @@ a:hover{
 	.imageBox iframe{
 		width: min(960px, 86vw);
 		height: min(540px, 48.375vw);
+	}
+	.galleryItem{
+		margin: min(10px, 1vw);
+		width: min(256px, 25.6vw);    
+	}
+	.galleryItem img{
+		width: min(256px, 25.6vw);
+		border-radius: min(50px, 5vw);
+	}
+	.itemOverlay{
+		border-radius: min(50px, 5vw);
+	}
+	.itemOverlay h3{
+		font-size: min(30px, 3vw);
+	}
+	.itemOverlay p{
+		font-size: min(22px, 2.2vw);
 	}
 }
