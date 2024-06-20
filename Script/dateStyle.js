@@ -5,7 +5,7 @@ const date = new Date();
 const year = date.getFullYear();
 const month = date.getMonth();
 const day = date.getDate();
-const dayOfWeek = 3 //date.getDay();
+const dayOfWeek = date.getDay();
 
 // Fetch singular objects
 var mainBody = document.querySelector('.mainBodyC');
@@ -61,8 +61,6 @@ for (var i = 0; i < path.length; i++)
         }
     }
 }
-console.log(path);
-console.log(addonToGetToRoot);
 
 // Apply custom themes based on day of week (overridden by more important events, such as specific days of year)
 switch (dayOfWeek)
