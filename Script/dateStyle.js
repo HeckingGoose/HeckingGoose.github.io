@@ -4,7 +4,8 @@
 const date = new Date();
 const year = date.getFullYear();
 const month = date.getMonth();
-const day =  date.getDate();
+const day = date.getDate();
+const dayOfWeek = 3 //date.getDay();
 
 // Fetch singular objects
 var mainBody = document.querySelector('.mainBodyC');
@@ -36,6 +37,113 @@ var h6 = document.getElementsByTagName('h6');
 
 // Set theme
 var theme = "";
+
+// Get window path
+var path = window.location.pathname;
+path = path.substring(1, path.lastIndexOf("/") + 1);
+var offset = 0;
+if (path.substring(1, 2) == ":")
+{
+    offset = 3;
+}
+var addonToGetToRoot = "";
+for (var i = 0; i < path.length; i++)
+{
+    if (path[i] == '/')
+    {
+        if (offset <= 0)
+        {
+            addonToGetToRoot += "../";
+        }
+        else
+        {
+            offset -= 1;
+        }
+    }
+}
+console.log(path);
+console.log(addonToGetToRoot);
+
+// Apply custom themes based on day of week (overridden by more important events, such as specific days of year)
+switch (dayOfWeek)
+{
+    // Sunday
+    case 0:
+        break;
+    // Monday
+    case 1:
+        break;
+    // Tuesday
+    case 2:
+        break;
+    // Wednesday
+    case 3:
+        // Get old background image stuff
+        var oldBackImage = document.body.style.backgroundImage;
+        var oldBackSize = document.body.style.backgroundSize;
+        var oldBackPosition = document.body.style.backgroundPosition;
+        var oldBackAttachment = document.body.style.backgroundAttachment;
+        
+
+        // Apply DnD theme
+        if (oldBackImage != "")
+        {
+            document.body.style.backgroundImage = oldBackImage + ", url('" + addonToGetToRoot + "Img/Themes/DnD/MainBack.gif')";
+        }
+        else
+        {
+            document.body.style.backgroundImage = "url('" + addonToGetToRoot + "Img/Themes/DnD/MainBack.gif')";
+        }
+        if (oldBackSize != "")
+        {
+            document.body.style.backgroundSize = oldBackSize + ", cover";
+        }
+        else
+        {
+            document.body.style.backgroundSize = "cover";
+        }
+        if (oldBackPosition != "")
+        {
+            document.body.style.backgroundPosition = oldBackPosition + ", center";
+        }
+        else
+        {
+            document.body.style.backgroundPosition = "center";
+        }
+        if (oldBackAttachment != "")
+        {
+            document.body.style.backgroundAttachment = oldBackAttachment + ", fixed";
+        }
+        else
+        {
+            document.body.style.backgroundAttachment =  "fixed";
+        }
+        theme = "Halloween";
+
+        // Set text colours
+        SetTextColour(
+            '#5F5FFF', // a
+            '#FFFFFF', // p
+            '#FFFFFF', // ul
+            '#FFFFFF', // li
+            '#FFFFFF', // h1
+            '#FFFFFF', // h2
+            '#FFFFFF', // h3
+            '#FFFFFF', // h4
+            '#FFFFFF', // h5
+            '#FFFFFF' // h6
+            );
+        break;
+    // Thursday
+    case 4:
+        break;
+    // Friday
+    case 5:
+        break;
+    // Saturday
+    case 6:
+        break;
+}
 
 // Apply custom styles based on current date
 switch (year)
