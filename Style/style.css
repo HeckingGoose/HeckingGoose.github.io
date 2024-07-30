@@ -3,7 +3,7 @@ h1, h2, h3, h4, h5, h6, p, a, ul, li{
     font-family: 'Indie Flower';
 }
 li{
-	list-style-image: url('../Img/UI/ListMarker.png');
+	list-style-image: url('../Img/UI/ListMarker.webp');
 }
 ul{
 	margin: 0%;
