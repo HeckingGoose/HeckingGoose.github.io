@@ -1,0 +1,16 @@
+.backgroundC{
+	border-radius: 0%;
+	background-image: url('../../../Img/Games/Dreaming/DreamingBackground.webp');
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.backgroundC_DnD{
+	border-radius: 0%;
+	background-image: url('../../../Img/Games/Dreaming/DreamingBackground.webp'), url('../../../Img/Themes/DnD/MainBack.gif');
+	background-attachment: fixed, fixed;
+	background-position: center, center;
+	background-repeat: no-repeat, no-repeat;
+	background-size: cover, cover;
+}

@@ -76,46 +76,15 @@ switch (dayOfWeek)
         break;
     // Wednesday
     case 3:
-        // Get old background image stuff
-        var oldBackImage = document.body.style.backgroundImage;
-        var oldBackSize = document.body.style.backgroundSize;
-        var oldBackPosition = document.body.style.backgroundPosition;
-        var oldBackAttachment = document.body.style.backgroundAttachment;
-        
+        // Apply DnD theme background
+        var background = document.querySelectorAll(".backgroundC");
+        for (var i = 0; i < background.length; i++)
+        {
+            background[i].classList.remove("backgroundC");
+            background[i].classList.add("backgroundC_DnD");
+        }
 
-        // Apply DnD theme
-        if (oldBackImage != "")
-        {
-            document.body.style.backgroundImage = oldBackImage + ", url('" + addonToGetToRoot + "Img/Themes/DnD/MainBack.gif')";
-        }
-        else
-        {
-            document.body.style.backgroundImage = "url('" + addonToGetToRoot + "Img/Themes/DnD/MainBack.gif')";
-        }
-        if (oldBackSize != "")
-        {
-            document.body.style.backgroundSize = oldBackSize + ", cover";
-        }
-        else
-        {
-            document.body.style.backgroundSize = "cover";
-        }
-        if (oldBackPosition != "")
-        {
-            document.body.style.backgroundPosition = oldBackPosition + ", center";
-        }
-        else
-        {
-            document.body.style.backgroundPosition = "center";
-        }
-        if (oldBackAttachment != "")
-        {
-            document.body.style.backgroundAttachment = oldBackAttachment + ", fixed";
-        }
-        else
-        {
-            document.body.style.backgroundAttachment =  "fixed";
-        }
+        // Piggyback off halloween theme
         theme = "Halloween";
 
         // Set text colours
