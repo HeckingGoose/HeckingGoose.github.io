@@ -20,6 +20,20 @@ a:hover{
     color: #3F3F3F;
     text-decoration: underline #000000;
 }
+section{
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 0%;
+}
+section h1{
+	text-decoration: underline;
+}
+section p{
+	margin-bottom: 0%;
+}
+.gameLink h1{
+	text-decoration: none;
+}
 .background
 {
 	min-height: 100vh;
@@ -51,17 +65,6 @@ a:hover{
 }
 .profile{
 	display: flex;
-}
-.sectionText h3{
-	margin-top: 5px;
-	margin-bottom: 0px;
-}
-.section{
-	display: flex;
-	flex-direction: column;
-}
-.section h2{
-	margin-bottom: 0%;
 }
 .imageRow{
 	display: flex;
@@ -158,49 +161,43 @@ a:hover{
 	}
 	.profile{
 		flex-direction: column-reverse;
-		margin-left: 4vw;
-		margin-right: 4vw;
-		margin-top: 2vw;
-		margin-bottom: 2vw;
 	}
-	.sectionImage{
-		margin-left: auto;
-		margin-right: auto;
-	}
-	.sectionImage img{
+	.profile img{
 		width: 75vw;
 		height: 75vw;
+		margin-top: 4vw;
+		align-self: center;
 	}
-	.sectionText{
-		width: auto;
+	.construction img{
+		width: 75vw;
+		height: 75vw;
+		margin-top: 4vw;
+		align-self: center;
 	}
-	.sectionText h3{
-		font-size: 4vw;
-	}
-	.sectionText li{
-		font-size: 4vw;
-	}
-	.section{
+	section{
 		width: auto;
 		margin-top: 4vw;
 		margin-left: 4vw;
 		margin-right: 4vw;
 	}
-	.section h1{
+	section p{
+		font-size: 4vw;
+		margin-top: 5vw;
+		margin-bottom: 5vw;
+	}
+	section li{
+		font-size: 4vw;
+	}
+	section h1{
 		font-size: 8vw;
 		margin-left: 4vw;
+		margin-right: 4vw;
 	}
-	.section h2{
+	section h2{
 		font-size: 7vw;
 		margin-left: 3.5vw;
 		margin-left: 3vw;
 		margin-top: 3vw;
-	}
-	.section h3{
-		font-size: 4vw;
-	}
-	.section li{
-		font-size: 4vw;
 	}
 	.imageRow{
 		flex-direction: column;
@@ -284,26 +281,52 @@ a:hover{
 		margin-right: min(40px, 4vw);
 		width: min(1000px, 99vw);
 	}
-	.section{
+	.profile section{
+		width: min(780px, 67vw);
+		margin-left: 0%;
+		margin-right: 0%;
+		margin-top: 0%;
+	}
+	section{
 		width: min(1000px, 90vw);
 		margin-left: min(40px, 4vw);
 		margin-right: min(40px, 4vw);
 		margin-top: min(40px, 4vw);
 	}
-	.section h1{
-		margin-left: min(30px, 3vw);
+	.profile img{
+		width: min(256px, 24vw);
+		height: min(256px, 24vw);
+		margin-left: min(4px, 0.4vw);
+		margin-right: 0%;
+		margin-top: 0%;
+		align-self: auto;
 	}
-	.section h2{
+	.construction img{
+		width: min(500px, 50vw);
+		height: min(500px, 50vw);
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 0%;
+		align-self: center;
+	}
+	section h1{
+		margin-left: min(30px, 3vw);
+		margin-right: min(30px, 3vw);
+		font-size: 2rem;
+	}
+	section h2{
 		margin-left: min(30px, 3vw);
 		margin-left: min(20px, 2vw);
 		margin-top: min(20px, 2vw);
 	}
-	.section h3{
+	section p{
 		font-size: 1.17rem;
+		margin-top: min(5px, 5vw);
+		margin-bottom: min(5px, 5vw);
 		margin-left: min(20px, 2vw);
 		margin-right: min(20px, 2vw);
 	}
-	.section li{
+	section li{
 		font-size: 1.17rem;
 		margin-left: min(20px, 2vw);
 		margin-right: min(20px, 2vw);
@@ -319,24 +342,6 @@ a:hover{
 	.imageBox p{
 		margin-top: min(5px, 0.5vw);
 		margin-left: min(15px, 1.5vw);
-	}
-	.sectionImage img{
-		width: min(256px, 24vw);
-		height: min(256px, 24vw);
-		margin-left: min(4px, 0.4vw);
-	}
-	.sectionText{
-		width: min(780px, 67vw);
-	}
-	.sectionText h3{
-		font-size: 1.17rem;
-		margin-left: min(20px, 2vw);
-		margin-right: min(20px, 2vw);
-	}
-	.sectionText li{
-		font-size: 1.17rem;
-		margin-left: min(20px, 2vw);
-		margin-right: min(20px, 2vw);
 	}
 	.imageRow{
 		flex-direction: row;

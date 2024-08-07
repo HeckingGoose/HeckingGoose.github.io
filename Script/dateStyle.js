@@ -7,22 +7,6 @@ const month = date.getMonth();
 const day = date.getDate();
 const dayOfWeek = date.getDay();
 
-// Fetch singular objects
-var mainBody = document.querySelector('.mainBodyC');
-var heading = document.querySelector('.headingC');
-var title = document.querySelector('.titleC');
-var currentPage = document.querySelector('.currentPageC');
-var siteTree = document.querySelector('.siteTreeC');
-
-// Fetch plural objects
-var headerItem = document.querySelectorAll('.headerItemC');
-var section = document.querySelectorAll('.sectionC');
-var sectionImage = document.querySelectorAll('.sectionImageC');
-var sectionText = document.querySelectorAll('.sectionTextC');
-var imageRow = document.querySelectorAll('.imageRowC');
-var itemOverlay = document.querySelector('.itemOverlayC');
-//var imageBox = document.querySelectorAll('.imageBoxC'); <- overwritten by font override
-
 // Fetch tags
 var link = document.getElementsByTagName('a');
 var p = document.getElementsByTagName('p');
@@ -322,8 +306,7 @@ if (theme != "")
     ApplyElementTheme("siteTreeC", theme);
     ApplyElementTheme("headerItemC", theme);
     ApplyElementTheme("sectionC", theme);
-    ApplyElementTheme("sectionImageC", theme);
-    ApplyElementTheme("sectionTextC", theme);
+    ApplyElementTheme("profileC", theme);
     ApplyElementTheme("imageRowC", theme);
     ApplyElementTheme("itemOverlayC", theme);
 }
