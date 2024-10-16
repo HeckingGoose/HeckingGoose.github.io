@@ -46,56 +46,6 @@ for (var i = 0; i < path.length; i++)
     }
 }
 
-// Apply custom themes based on day of week (overridden by more important events, such as specific days of year)
-switch (dayOfWeek)
-{
-    // Sunday
-    case 0:
-        break;
-    // Monday
-    case 1:
-        break;
-    // Tuesday
-    case 2:
-        break;
-    // Wednesday
-    case 3:
-        // Apply DnD theme background
-        var background = document.querySelectorAll(".backgroundC");
-        for (var i = 0; i < background.length; i++)
-        {
-            background[i].classList.remove("backgroundC");
-            background[i].classList.add("backgroundC_DnD");
-        }
-
-        // Piggyback off halloween theme
-        theme = "Halloween";
-
-        // Set text colours
-        SetTextColour(
-            '#5F5FFF', // a
-            '#FFFFFF', // p
-            '#FFFFFF', // ul
-            '#FFFFFF', // li
-            '#FFFFFF', // h1
-            '#FFFFFF', // h2
-            '#FFFFFF', // h3
-            '#FFFFFF', // h4
-            '#FFFFFF', // h5
-            '#FFFFFF' // h6
-            );
-        break;
-    // Thursday
-    case 4:
-        break;
-    // Friday
-    case 5:
-        break;
-    // Saturday
-    case 6:
-        break;
-}
-
 // Apply custom styles based on current date
 switch (year)
 {
@@ -293,6 +243,56 @@ switch (year)
                 }
                 break;
         }
+        break;
+}
+
+// Apply custom themes based on day of week (overridden by more important events, such as specific days of year)
+switch (dayOfWeek)
+{
+    // Sunday
+    case 0:
+        break;
+    // Monday
+    case 1:
+        break;
+    // Tuesday
+    case 2:
+        break;
+    // Wednesday
+    case 3:
+        // Apply DnD theme background
+        var background = document.querySelectorAll(".backgroundC");
+        for (var i = 0; i < background.length; i++)
+        {
+            background[i].classList.remove("backgroundC");
+            background[i].classList.add("backgroundC_DnD");
+        }
+
+        // Piggyback off halloween theme
+        theme = "Halloween";
+
+        // Set text colours
+        SetTextColour(
+            '#5F5FFF', // a
+            '#FFFFFF', // p
+            '#FFFFFF', // ul
+            '#FFFFFF', // li
+            '#FFFFFF', // h1
+            '#FFFFFF', // h2
+            '#FFFFFF', // h3
+            '#FFFFFF', // h4
+            '#FFFFFF', // h5
+            '#FFFFFF' // h6
+            );
+        break;
+    // Thursday
+    case 4:
+        break;
+    // Friday
+    case 5:
+        break;
+    // Saturday
+    case 6:
         break;
 }
 

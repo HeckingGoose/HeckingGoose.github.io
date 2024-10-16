@@ -4,34 +4,6 @@
 // Get profile image
 var profileImage = document.getElementById("profileImage");
 
-// Apply custom themes based on day of week (overridden by more important events, such as specific days of year)
-switch (dayOfWeek)
-{
-    // Sunday
-    case 0:
-        break;
-    // Monday
-    case 1:
-        break;
-    // Tuesday
-    case 2:
-        break;
-    // Wednesday
-    case 3:
-        // Apply DnD theme
-        profileImage.src = "Img/Themes/DnD/Profile.gif";
-        break;
-    // Thursday
-    case 4:
-        break;
-    // Friday
-    case 5:
-        break;
-    // Saturday
-    case 6:
-        break;
-}
-
 switch (year)
 {
     default:
@@ -92,5 +64,33 @@ switch (year)
                 }
                 break;
         }
+        break;
+}
+
+// Apply custom themes based on day of week (overridden by more important events, such as specific days of year)
+switch (dayOfWeek)
+{
+    // Sunday
+    case 0:
+        break;
+    // Monday
+    case 1:
+        break;
+    // Tuesday
+    case 2:
+        break;
+    // Wednesday
+    case 3:
+        // Apply DnD theme
+        profileImage.src = "Img/Themes/DnD/Profile.gif";
+        break;
+    // Thursday
+    case 4:
+        break;
+    // Friday
+    case 5:
+        break;
+    // Saturday
+    case 6:
         break;
 }
