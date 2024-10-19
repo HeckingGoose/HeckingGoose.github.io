@@ -141,6 +141,25 @@ switch (year)
                             '#D8D8FF' // h6
                             );
                         break;
+                    case 12: // Debtor's Grimoire release date
+                        // Set theme and background colour
+                        document.body.style.backgroundColor = '#FFFFFF';
+                        theme = "NewYearEve";
+                        
+                        // Set text colours
+                        SetTextColour(
+                            '#444444', // a
+                            '#000000', // p
+                            '#000000', // ul
+                            '#000000', // li
+                            '#000000', // h1
+                            '#000000', // h2
+                            '#000000', // h3
+                            '#000000', // h4
+                            '#000000', // h5
+                            '#000000' // h6
+                            );
+                        break;
                     case 31: // Halloween
                         // Set theme and background colour
                         document.body.style.backgroundColor = '#2E364E';

@@ -34,6 +34,9 @@ switch (year)
                     case 1: // Birthday
                         profileImage.src = "Img/Themes/Birthday/Profile.png";
                         break;
+                    case 12: // Debtor's Grimoire release date
+                        profileImage.src = "Img/Themes/Debtors/Profile.png";
+                        break;
                     case 31: // Halloween
                         profileImage.src = "Img/Themes/Halloween/Profile.png";
                         break;
