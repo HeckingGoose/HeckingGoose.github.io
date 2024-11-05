@@ -128,19 +128,14 @@ section p{
 .themeButtons{
 	align-items: center;
 	position: fixed;
-	bottom: 10px;
-	right: 10px;
 	display: flex;
-	flex-direction: column;
 }
 .themeButtons button{
-	margin: 5px;
 	background-color: #FFFFFF00;
 	border: none;
 }
 .themeButtons img
 {
-	width: 64px;
 	opacity: 50%;
 }
 .themeButtons img:hover
@@ -255,6 +250,17 @@ section p{
 	}
 	.itemOverlay p{
 		font-size:4vw;
+	}
+	.themeButtons{
+		flex-direction: row;
+		bottom: 1vw;
+		right: 1vw;
+	}
+	.themeButtons button{
+		margin: 0.5vw;
+	}
+	.themeButtons img{
+		width: 15vw;
 	}
 }
 @media (min-aspect-ratio: 1)
@@ -392,5 +398,17 @@ section p{
 	}
 	.itemOverlay p{
 		font-size: min(22px, 2.2vw);
+	}
+	.themeButtons{
+		flex-direction: row;
+		bottom: min(10px, 1vw);
+		right: min(10px, 1vw);
+		flex-direction: column;
+	}
+	.themeButtons button{
+		margin: min(5px, 0.5vw);
+	}
+	.themeButtons img{
+		width: min(64px, 6.5vw);
 	}
 }
