@@ -346,7 +346,18 @@ function ApplyElementTheme(elementName, theme)
     }
 }
 
-function SetTextColour(aC, pC, ulC, liC, h1C, h2C, h3C, h4C, h5C, h6C)
+function SetTextColour(
+    aC,
+    pC,
+    ulC,
+    liC,
+    h1C,
+    h2C,
+    h3C,
+    h4C,
+    h5C,
+    h6C
+    )
 {
     for (var i = 0; i < link.length; i++)
     {
