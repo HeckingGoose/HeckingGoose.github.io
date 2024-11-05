@@ -105,4 +105,6 @@ function ReApplyThemes()
     // Apply theme
     ApplyTheme();
     ApplyProfileTheme();
+    SetLightnessButton(lightness);
+    SetThemeButton(seasonal);
 }

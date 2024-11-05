@@ -19,29 +19,6 @@ var h4 = document.getElementsByTagName('h4');
 var h5 = document.getElementsByTagName('h5');
 var h6 = document.getElementsByTagName('h6');
 
-// Get window path
-var path = window.location.pathname;
-path = path.substring(1, path.lastIndexOf("/") + 1);
-var offset = 0;
-if (path.substring(1, 2) == ":")
-{
-    offset = 3;
-}
-var addonToGetToRoot = "";
-for (var i = 0; i < path.length; i++)
-{
-    if (path[i] == '/')
-    {
-        if (offset <= 0)
-        {
-            addonToGetToRoot += "../";
-        }
-        else
-        {
-            offset -= 1;
-        }
-    }
-}
 
 function ApplyTheme()
 {

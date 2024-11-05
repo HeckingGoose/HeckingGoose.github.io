@@ -126,15 +126,26 @@ section p{
 }
 
 .themeButtons{
+	align-items: center;
 	position: fixed;
 	bottom: 10px;
 	right: 10px;
-	border: 3px solid black;
 	display: flex;
 	flex-direction: column;
 }
 .themeButtons button{
 	margin: 5px;
+	background-color: #FFFFFF00;
+	border: none;
+}
+.themeButtons img
+{
+	width: 64px;
+	opacity: 50%;
+}
+.themeButtons img:hover
+{
+	opacity: 25%;
 }
 
 @media (max-aspect-ratio: 1)
