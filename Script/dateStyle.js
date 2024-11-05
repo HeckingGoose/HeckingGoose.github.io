@@ -46,249 +46,254 @@ for (var i = 0; i < path.length; i++)
     }
 }
 
-// Apply custom styles based on current date
-switch (year)
+// Call applytheme()
+ApplyTheme();
+
+function ApplyTheme()
 {
-    default:
-        switch (month)
-        {
-            default:
-                break;
-            case 0: // January
-                switch (day)
-                {
-                    case 1: // New years day
-                        // Set theme and background colour
-                        document.body.style.backgroundColor = '#88575F';
-                        theme = "Autumn";
+    // Apply custom styles based on current date
+    switch (year)
+    {
+        default:
+            switch (month)
+            {
+                default:
+                    break;
+                case 0: // January
+                    switch (day)
+                    {
+                        case 1: // New years day
+                            // Set theme and background colour
+                            document.body.style.backgroundColor = '#88575F';
+                            theme = "Autumn";
 
-                        // Set text colours
-                        SetTextColour(
-                            '#FFDDDD', // a
-                            '#FFFFFF', // p
-                            '#FFFFFF', // ul
-                            '#FFFFFF', // li
-                            '#FFFFFF', // h1
-                            '#FFFFFF', // h2
-                            '#FFFFFF', // h3
-                            '#FFFFFF', // h4
-                            '#FFFFFF', // h5
-                            '#FFFFFF' // h6
-                            );
-                }
-            case 1: // February
-                switch (day)
-                {
-                    case 14:
-                        // Set theme and background colour
-                        document.body.style.backgroundColor = '#C9B1C7';
-                        theme = "Valentine";
+                            // Set text colours
+                            SetTextColour(
+                                '#FFDDDD', // a
+                                '#FFFFFF', // p
+                                '#FFFFFF', // ul
+                                '#FFFFFF', // li
+                                '#FFFFFF', // h1
+                                '#FFFFFF', // h2
+                                '#FFFFFF', // h3
+                                '#FFFFFF', // h4
+                                '#FFFFFF', // h5
+                                '#FFFFFF' // h6
+                                );
+                    }
+                case 1: // February
+                    switch (day)
+                    {
+                        case 14:
+                            // Set theme and background colour
+                            document.body.style.backgroundColor = '#C9B1C7';
+                            theme = "Valentine";
 
-                        // Set text colours
-                        SetTextColour(
-                            '#FFDDDD', // a
-                            '#FFFFFF', // p
-                            '#FFFFFF', // ul
-                            '#FFFFFF', // li
-                            '#FFFFFF', // h1
-                            '#FFFFFF', // h2
-                            '#FFFFFF', // h3
-                            '#FFFFFF', // h4
-                            '#FFFFFF', // h5
-                            '#FFFFFF' // h6
-                            );
-                        break;
-                }
-                break;
-            case 8: // September
-                // Set theme and background colour
-                document.body.style.backgroundColor = '#88575F';
-                theme = "Autumn";
-
-                // Set text colours
-                SetTextColour(
-                    '#FFDDDD', // a
-                    '#FFFFFF', // p
-                    '#FFFFFF', // ul
-                    '#FFFFFF', // li
-                    '#FFFFFF', // h1
-                    '#FFFFFF', // h2
-                    '#FFFFFF', // h3
-                    '#FFFFFF', // h4
-                    '#FFFFFF', // h5
-                    '#FFFFFF' // h6
-                    );
-                break;
-            case 9: // October
-                switch (day)
-                {
-                    case 1: // Birthday
-                        // Set theme and background colour
-                        document.body.style.backgroundColor = '#101030';
-                        theme = "Birthday";
-
-                        // Set text colours
-                        SetTextColour(
-                            '#7F7FFF', // a
-                            '#D8D8FF', // p
-                            '#D8D8FF', // ul
-                            '#D8D8FF', // li
-                            '#D8D8FF', // h1
-                            '#D8D8FF', // h2
-                            '#D8D8FF', // h3
-                            '#D8D8FF', // h4
-                            '#D8D8FF', // h5
-                            '#D8D8FF' // h6
-                            );
-                        break;
-                    case 12: // Debtor's Grimoire release date
-                        // Set theme and background colour
-                        document.body.style.backgroundColor = '#FFFFFF';
-                        theme = "NewYearEve";
-                        
-                        // Set text colours
-                        SetTextColour(
-                            '#444444', // a
-                            '#000000', // p
-                            '#000000', // ul
-                            '#000000', // li
-                            '#000000', // h1
-                            '#000000', // h2
-                            '#000000', // h3
-                            '#000000', // h4
-                            '#000000', // h5
-                            '#000000' // h6
-                            );
-                        break;
-                    case 31: // Halloween
-                        // Set theme and background colour
-                        document.body.style.backgroundColor = '#2E364E';
-                        theme = "Halloween";
-
-                        // Set text colours
-                        SetTextColour(
-                            '#5F5FFF', // a
-                            '#FFFFFF', // p
-                            '#FFFFFF', // ul
-                            '#FFFFFF', // li
-                            '#FFFFFF', // h1
-                            '#FFFFFF', // h2
-                            '#FFFFFF', // h3
-                            '#FFFFFF', // h4
-                            '#FFFFFF', // h5
-                            '#FFFFFF' // h6
-                            );
-                        break;
-                    default:
-                        // Set theme and background colour
-                        document.body.style.backgroundColor = '#88575F';
-                        theme = "Autumn";
-
-                        // Set text colours
-                        SetTextColour(
-                            '#FFDDDD', // a
-                            '#FFFFFF', // p
-                            '#FFFFFF', // ul
-                            '#FFFFFF', // li
-                            '#FFFFFF', // h1
-                            '#FFFFFF', // h2
-                            '#FFFFFF', // h3
-                            '#FFFFFF', // h4
-                            '#FFFFFF', // h5
-                            '#FFFFFF' // h6
-                            );
-                        break;
-                }
-                break;
-            case 10: // November
-                // Set theme and background colour
-                document.body.style.backgroundColor = '#88575F';
-                theme = "Autumn";
-
-                // Set text colours
-                SetTextColour(
-                    '#FFDDDD', // a
-                    '#FFFFFF', // p
-                    '#FFFFFF', // ul
-                    '#FFFFFF', // li
-                    '#FFFFFF', // h1
-                    '#FFFFFF', // h2
-                    '#FFFFFF', // h3
-                    '#FFFFFF', // h4
-                    '#FFFFFF', // h5
-                    '#FFFFFF' // h6
-                    );
-                break;
-            case 11: // December
-                if (day < 27) // Christmas zone
-                {
+                            // Set text colours
+                            SetTextColour(
+                                '#FFDDDD', // a
+                                '#FFFFFF', // p
+                                '#FFFFFF', // ul
+                                '#FFFFFF', // li
+                                '#FFFFFF', // h1
+                                '#FFFFFF', // h2
+                                '#FFFFFF', // h3
+                                '#FFFFFF', // h4
+                                '#FFFFFF', // h5
+                                '#FFFFFF' // h6
+                                );
+                            break;
+                    }
+                    break;
+                case 8: // September
                     // Set theme and background colour
-                    document.body.style.backgroundColor = '#BCEDE3';
-                    theme = "Christmas";
+                    document.body.style.backgroundColor = '#88575F';
+                    theme = "Autumn";
 
                     // Set text colours
                     SetTextColour(
-                        '#F00000', // a
-                        '#1F1111', // p
-                        '#1F1111', // ul
-                        '#1F1111', // li
-                        '#1F1111', // h1
-                        '#1F1111', // h2
-                        '#1F1111', // h3
-                        '#1F1111', // h4
-                        '#1F1111', // h5
-                        '#1F1111' // h6
+                        '#FFDDDD', // a
+                        '#FFFFFF', // p
+                        '#FFFFFF', // ul
+                        '#FFFFFF', // li
+                        '#FFFFFF', // h1
+                        '#FFFFFF', // h2
+                        '#FFFFFF', // h3
+                        '#FFFFFF', // h4
+                        '#FFFFFF', // h5
+                        '#FFFFFF' // h6
                         );
-                }
-                else if (day == 31) // New year's eve
-                {
-                // Set theme and background colour
-                document.body.style.backgroundColor = '#FFFFFF';
-                theme = "NewYearEve";
-                
-                // Set text colours
-                SetTextColour(
-                    '#444444', // a
-                    '#000000', // p
-                    '#000000', // ul
-                    '#000000', // li
-                    '#000000', // h1
-                    '#000000', // h2
-                    '#000000', // h3
-                    '#000000', // h4
-                    '#000000', // h5
-                    '#000000' // h6
-                    );
-                }
-                break;
-        }
-        break;
-}
+                    break;
+                case 9: // October
+                    switch (day)
+                    {
+                        case 1: // Birthday
+                            // Set theme and background colour
+                            document.body.style.backgroundColor = '#101030';
+                            theme = "Birthday";
 
-// Apply custom themes based on day of week (overridden by more important events, such as specific days of year)
-switch (dayOfWeek)
-{
-    // Sunday
-    case 0:
-        break;
-    // Monday
-    case 1:
-        break;
-    // Tuesday
-    case 2:
-        break;
-    // Wednesday
-    case 3:
-        // Apply DnD theme background
-        var background = document.querySelectorAll(".backgroundC");
-        for (var i = 0; i < background.length; i++)
-        {
-            background[i].classList.remove("backgroundC");
-            background[i].classList.add("backgroundC_DnD");
-        }
+                            // Set text colours
+                            SetTextColour(
+                                '#7F7FFF', // a
+                                '#D8D8FF', // p
+                                '#D8D8FF', // ul
+                                '#D8D8FF', // li
+                                '#D8D8FF', // h1
+                                '#D8D8FF', // h2
+                                '#D8D8FF', // h3
+                                '#D8D8FF', // h4
+                                '#D8D8FF', // h5
+                                '#D8D8FF' // h6
+                                );
+                            break;
+                        case 12: // Debtor's Grimoire release date
+                            // Set theme and background colour
+                            document.body.style.backgroundColor = '#FFFFFF';
+                            theme = "NewYearEve";
+                            
+                            // Set text colours
+                            SetTextColour(
+                                '#444444', // a
+                                '#000000', // p
+                                '#000000', // ul
+                                '#000000', // li
+                                '#000000', // h1
+                                '#000000', // h2
+                                '#000000', // h3
+                                '#000000', // h4
+                                '#000000', // h5
+                                '#000000' // h6
+                                );
+                            break;
+                        case 31: // Halloween
+                            // Set theme and background colour
+                            document.body.style.backgroundColor = '#2E364E';
+                            theme = "Halloween";
 
-        // Piggyback off halloween theme
-        theme = "Halloween";
+                            // Set text colours
+                            SetTextColour(
+                                '#5F5FFF', // a
+                                '#FFFFFF', // p
+                                '#FFFFFF', // ul
+                                '#FFFFFF', // li
+                                '#FFFFFF', // h1
+                                '#FFFFFF', // h2
+                                '#FFFFFF', // h3
+                                '#FFFFFF', // h4
+                                '#FFFFFF', // h5
+                                '#FFFFFF' // h6
+                                );
+                            break;
+                        default:
+                            // Set theme and background colour
+                            document.body.style.backgroundColor = '#88575F';
+                            theme = "Autumn";
+
+                            // Set text colours
+                            SetTextColour(
+                                '#FFDDDD', // a
+                                '#FFFFFF', // p
+                                '#FFFFFF', // ul
+                                '#FFFFFF', // li
+                                '#FFFFFF', // h1
+                                '#FFFFFF', // h2
+                                '#FFFFFF', // h3
+                                '#FFFFFF', // h4
+                                '#FFFFFF', // h5
+                                '#FFFFFF' // h6
+                                );
+                            break;
+                    }
+                    break;
+                case 10: // November
+                    // Set theme and background colour
+                    document.body.style.backgroundColor = '#88575F';
+                    theme = "Autumn";
+
+                    // Set text colours
+                    SetTextColour(
+                        '#FFDDDD', // a
+                        '#FFFFFF', // p
+                        '#FFFFFF', // ul
+                        '#FFFFFF', // li
+                        '#FFFFFF', // h1
+                        '#FFFFFF', // h2
+                        '#FFFFFF', // h3
+                        '#FFFFFF', // h4
+                        '#FFFFFF', // h5
+                        '#FFFFFF' // h6
+                        );
+                    break;
+                case 11: // December
+                    if (day < 27) // Christmas zone
+                    {
+                        // Set theme and background colour
+                        document.body.style.backgroundColor = '#BCEDE3';
+                        theme = "Christmas";
+
+                        // Set text colours
+                        SetTextColour(
+                            '#F00000', // a
+                            '#1F1111', // p
+                            '#1F1111', // ul
+                            '#1F1111', // li
+                            '#1F1111', // h1
+                            '#1F1111', // h2
+                            '#1F1111', // h3
+                            '#1F1111', // h4
+                            '#1F1111', // h5
+                            '#1F1111' // h6
+                            );
+                    }
+                    else if (day == 31) // New year's eve
+                    {
+                    // Set theme and background colour
+                    document.body.style.backgroundColor = '#FFFFFF';
+                    theme = "NewYearEve";
+                    
+                    // Set text colours
+                    SetTextColour(
+                        '#444444', // a
+                        '#000000', // p
+                        '#000000', // ul
+                        '#000000', // li
+                        '#000000', // h1
+                        '#000000', // h2
+                        '#000000', // h3
+                        '#000000', // h4
+                        '#000000', // h5
+                        '#000000' // h6
+                        );
+                    }
+                    break;
+            }
+            break;
+    }
+
+    // Apply custom themes based on day of week (overridden by more important events, such as specific days of year)
+    switch (dayOfWeek)
+    {
+        // Sunday
+        case 0:
+            break;
+        // Monday
+        case 1:
+            break;
+        // Tuesday
+        case 2:
+            break;
+        // Wednesday
+        case 3:
+            // Apply DnD theme background
+            var background = document.querySelectorAll(".backgroundC");
+            for (var i = 0; i < background.length; i++)
+            {
+                background[i].classList.remove("backgroundC");
+                background[i].classList.add("backgroundC_DnD");
+            }
+
+            // Piggyback off halloween theme
+            theme = "Halloween";
 
         // Set text colours
         SetTextColour(
@@ -328,6 +333,7 @@ if (theme != "")
     ApplyElementTheme("profileC", theme);
     ApplyElementTheme("imageRowC", theme);
     ApplyElementTheme("itemOverlayC", theme);
+}
 }
 
 function ApplyElementTheme(elementName, theme)

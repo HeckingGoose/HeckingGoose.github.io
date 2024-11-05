@@ -4,96 +4,102 @@
 // Get profile image
 var profileImage = document.getElementById("profileImage");
 
-switch (year)
-{
-    default:
-        switch (month)
-        {
-            default:
-                break;
-            case 0: // January
-                switch (day)
-                {
-                    case 1: // New years day
-                        profileImage.src = "Img/Themes/NewYear/Profile.png";
-                }
-            case 1: // February
-                switch (day)
-                {
-                    case 14: // Valentines
-                        profileImage.src = "Img/Themes/Valentine/Profile.png";
-                        break;
-                }
-                break;
-            case 8: // September
-                profileImage.src = "Img/Themes/Autumn/Profile.png";
-                break;
-            case 9: // October
-                switch (day)
-                {
-                    case 1: // Birthday
-                        profileImage.src = "Img/Themes/Birthday/Profile.png";
-                        break;
-                    case 12: // Debtor's Grimoire release date
-                        profileImage.src = "Img/Themes/Debtors/Profile.png";
-                        break;
-                    case 31: // Halloween
-                        profileImage.src = "Img/Themes/Halloween/Profile.png";
-                        break;
-                    default: // Autumn
-                        profileImage.src = "Img/Themes/Autumn/Profile.png";
-                        break;
-                }
-                break;
-            case 10: // November
-                profileImage.src = "Img/Themes/Autumn/Profile.png";
-                break;
-            case 11: // December
-                if (day < 25) // Run up to Christmas
-                {
-                    profileImage.src = "Img/Themes/ChristmasLeadup/Profile.png";
-                }
-                else if (day == 25) // Christmas day
-                {
-                    profileImage.src = "Img/Themes/Christmas/Profile.png";
-                }
-                else if (day == 26) // Boxing day
-                {
-                    profileImage.src = "Img/Themes/ChristmasOver/Profile.png";
-                }
-                else if (day == 31) // New year's eve
-                {
-                    profileImage.src = "Img/Themes/NewYearEve/Profile.png";
-                }
-                break;
-        }
-        break;
-}
+// Apply profile theme
+ApplyProfileTheme();
 
-// Apply custom themes based on day of week (overridden by more important events, such as specific days of year)
-switch (dayOfWeek)
+function ApplyProfileTheme()
 {
-    // Sunday
-    case 0:
-        break;
-    // Monday
-    case 1:
-        break;
-    // Tuesday
-    case 2:
-        break;
-    // Wednesday
-    case 3:
-        // Apply DnD theme
-        profileImage.src = "Img/Themes/DnD/Profile.gif";
-        break;
-    // Thursday
-    case 4:
-        break;
-    // Friday
-    case 5:
-        break;
-    // Saturday
-    case 6:
-        break;
+    switch (year)
+    {
+        default:
+            switch (month)
+            {   
+                default:
+                    break;
+                case 0: // January
+                    switch (day)
+                    {
+                        case 1: // New years day
+                            profileImage.src = "Img/Themes/NewYear/Profile.png";
+                    }
+                case 1: // February
+                    switch (day)
+                    {
+                        case 14: // Valentines
+                            profileImage.src = "Img/Themes/Valentine/Profile.png";
+                            break;
+                    }
+                    break;
+                case 8: // September
+                    profileImage.src = "Img/Themes/Autumn/Profile.png";
+                    break;
+                case 9: // October
+                    switch (day)
+                    {
+                        case 1: // Birthday
+                            profileImage.src = "Img/Themes/Birthday/Profile.png";
+                            break;
+                        case 12: // Debtor's Grimoire release date
+                            profileImage.src = "Img/Themes/Debtors/Profile.png";
+                            break;
+                        case 31: // Halloween
+                            profileImage.src = "Img/Themes/Halloween/Profile.png";
+                            break;
+                        default: // Autumn
+                            profileImage.src = "Img/Themes/Autumn/Profile.png";
+                            break;
+                    }
+                    break;
+                case 10: // November
+                    profileImage.src = "Img/Themes/Autumn/Profile.png";
+                    break;
+                case 11: // December
+                    if (day < 25) // Run up to Christmas
+                    {
+                        profileImage.src = "Img/Themes/ChristmasLeadup/Profile.png";
+                    }
+                    else if (day == 25) // Christmas day
+                    {
+                        profileImage.src = "Img/Themes/Christmas/Profile.png";
+                    }
+                    else if (day == 26) // Boxing day
+                    {
+                        profileImage.src = "Img/Themes/ChristmasOver/Profile.png";
+                    }
+                    else if (day == 31) // New year's eve
+                    {
+                        profileImage.src = "Img/Themes/NewYearEve/Profile.png";
+                    }
+                    break;
+            }
+            break;
+    }
+
+    // Apply custom themes based on day of week (overridden by more important events, such as specific days of year)
+    switch (dayOfWeek)
+    {
+        // Sunday
+        case 0:
+            break;
+        // Monday
+        case 1:
+            break;
+        // Tuesday
+        case 2:
+            break;
+        // Wednesday
+        case 3:
+            // Apply DnD theme
+            profileImage.src = "Img/Themes/DnD/Profile.gif";
+            break;
+        // Thursday
+        case 4:
+            break;
+        // Friday
+        case 5:
+            break;
+        // Saturday
+        case 6:
+            break;
+    }
 }
