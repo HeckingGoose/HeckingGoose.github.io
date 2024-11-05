@@ -6,6 +6,10 @@
     background-color: #1D3E5A;
     box-shadow: 5px 5px 15px #0D2E4A;
 }
+.mainBodyC_DnD{
+    background-color: #1D3E5A;
+    box-shadow: 5px 5px 15px #0D2E4A;
+}
 .mainBodyC_Christmas{
     background-color: #DEFFF9;
     box-shadow: 5px 5px 15px #9CC4BC;
@@ -22,9 +26,21 @@
     background-color: #DDDDDD;
     box-shadow: 5px 5px 15px #000000;
 }
+.mainBodyC_NewYearDay{
+    background-color: #BD5D61;
+    box-shadow: 5px 5px 15px #5A4548;
+}
 .mainBodyC_Birthday{
     background-color: #202040;
     box-shadow: 5px 5px 15px #181838;
+}
+.mainBodyC_Debtors{
+    background-color: #DDDDDD;
+    box-shadow: 5px 5px 15px #000000;
+}
+.mainBodyC_Dark{
+    background-color: #111111;
+    box-shadow: 5px 5px 15px #000000;
 }
 
 .titleC{
@@ -33,6 +49,11 @@
     border-style: none none solid none;
 }
 .titleC_Halloween{
+    background-color: #0D2E4A;
+    border: 2px #001E3A;
+    border-style: none none solid none;
+}
+.titleC_DnD{
     background-color: #0D2E4A;
     border: 2px #001E3A;
     border-style: none none solid none;
@@ -57,9 +78,24 @@
     border: 2px #9A9A9A;
     border-style: none none solid none;
 }
+.titleC_NewYearDay{
+    background-color: #80464F;
+    border: 2px #70363F;
+    border-style: none none solid none;
+}
 .titleC_Birthday{
     background-color: #181838;
     border: 2px #080828;
+    border-style: none none solid none;
+}
+.titleC_Debtors{
+    background-color: #AAAAAA;
+    border: 2px #9A9A9A;
+    border-style: none none solid none;
+}
+.titleC_Dark{
+    background-color: #222222;
+    border: 2px #2F2F2F;
     border-style: none none solid none;
 }
 
@@ -69,6 +105,11 @@
     border-style: none none solid none;
 }
 .headingC_Halloween{
+    background-color: #1D3E5A;
+    border: 2px #001E3A;
+    border-style: none none solid none;
+}
+.headingC_DnD{
     background-color: #1D3E5A;
     border: 2px #001E3A;
     border-style: none none solid none;
@@ -93,9 +134,24 @@
     border: 2px #9A9A9A;
     border-style: none none solid none;
 }
+.headingC_NewYearDay{
+    background-color: #80464F;
+    border: 2px #70363F;
+    border-style: none none solid none;
+}
 .headingC_Birthday{
     background-color: #181838;
     border: 2px #080828;
+    border-style: none none solid none;
+}
+.headingC_Debtors{
+    background-color: #AAAAAA;
+    border: 2px #9A9A9A;
+    border-style: none none solid none;
+}
+.headingC_Dark{
+    background-color: #222222;
+    border: 2px #2f2f2f;
     border-style: none none solid none;
 }
 
@@ -113,6 +169,14 @@
     border-style: none none solid none;
 }
 .headerItemC_Halloween img:hover{
+	background-color: #001E3A;
+}
+.headerItemC_DnD{
+    background-color: #0D2E4A;
+    border: 2px #001E3A;
+    border-style: none none solid none;
+}
+.headerItemC_DnD img:hover{
 	background-color: #001E3A;
 }
 .headerItemC_Christmas{
@@ -147,6 +211,14 @@
 .headerItemC_NewYearEve img:hover{
     background-color: #9A9A9A;
 }
+.headerItemC_NewYearDay{
+    background-color: #80464F;
+    border: 2px #70363F;
+    border-style: none none solid none;
+}
+.headerItemC_NewYearDay img:hover{
+    background-color: #70363F;
+}
 .headerItemC_Birthday{
     background-color: #181838;
     border: 2px #080828;
@@ -155,11 +227,30 @@
 .headerItemC_Birthday img:hover{
     background-color: #080828;
 }
+.headerItemC_Debtors{
+    background-color: #AAAAAA;
+    border: 2px #9A9A9A;
+    border-style: none none solid none;
+}
+.headerItemC_Debtors img:hover{
+    background-color: #9A9A9A;
+}
+.headerItemC_Dark{
+    background-color: #222222;
+    border: 2px #2f2f2f;
+    border-style: none none solid none;
+}
+.headerItemC_Dark img:hover{
+    background-color: #2f2f2f;
+}
 
 .currentPageC{
 	background-color: #EFDFDF;
 }
 .currentPageC_Halloween{
+	background-color: #001E3A;
+}
+.currentPageC_DnD{
 	background-color: #001E3A;
 }
 .currentPageC_Christmas{
@@ -174,14 +265,26 @@
 .currentPageC_NewYearEve{
     background-color: #9A9A9A;
 }
+.currentPageC_NewYearDay{
+    background-color: #70363F;
+}
 .currentPageC_Birthday{
     background-color: #080828;
+}
+.currentPageC_Debtors{
+    background-color: #9A9A9A;
+}
+.currentPageC_Dark{
+    background-color: #2f2f2f;
 }
 
 .sectionC{
     border: 2px dashed #FFDFDF;
 }
 .sectionC_Halloween{
+	border: 2px dashed #001E3A;
+}
+.sectionC_DnD{
 	border: 2px dashed #001E3A;
 }
 .sectionC_Christmas{
@@ -196,14 +299,26 @@
 .sectionC_NewYearEve{
     border: 2px dashed #9A9A9A;
 }
+.sectionC_NewYearDay{
+    border: 2px dashed #70363F;
+}
 .sectionC_Birthday{
     border: 2px dashed #080828;
+}
+.sectionC_Debtors{
+    border: 2px dashed #9A9A9A;
+}
+.sectionC_Dark{
+    border: 2px dashed #2f2f2f;
 }
 
 .sectionC img{
     box-shadow: 3px 3px 10px #CFCFCF;
 }
 .sectionC_Halloween img{
+    box-shadow: 3px 3px 10px #0D2E4A;
+}
+.sectionC_DnD img{
     box-shadow: 3px 3px 10px #0D2E4A;
 }
 .sectionC_Christmas img{
@@ -218,14 +333,26 @@
 .sectionC_NewYearEve img{
     box-shadow: 3px 3px 10px #AAAAAA;
 }
+.sectionC_NewYearDay img{
+    box-shadow: 3px 3px 10px #5A4548;
+}
 .sectionC_Birthday img{
     box-shadow: 3px 3px 10px #080828;
+}
+.sectionC_Debtors img{
+    box-shadow: 3px 3px 10px #AAAAAA;
+}
+.sectionC_Dark img{
+    box-shadow: 3px 3px 10px #000000;
 }
 
 .profileC img{
     box-shadow: 3px 3px 10px #CFCFCF;
 }
 .profileC_Halloween img{
+    box-shadow: 3px 3px 10px #0D2E4A;
+}
+.profileC_DnD img{
     box-shadow: 3px 3px 10px #0D2E4A;
 }
 .profileC_Christmas img{
@@ -240,14 +367,26 @@
 .profileC_NewYearEve img{
     box-shadow: 3px 3px 10px #AAAAAA;
 }
+.profileC_NewYearDay img{
+    box-shadow: 3px 3px 10px #5A4548;
+}
 .profileC_Birthday img{
     box-shadow: 3px 3px 10px #080828;
+}
+.profileC_Debtors img{
+    box-shadow: 3px 3px 10px #AAAAAA;
+}
+.profileC_Dark img{
+    box-shadow: 3px 3px 10px #000000;
 }
 
 .imageRowC img{
     box-shadow: 5px 5px 15px #CFCFCF;
 }
 .imageRowC_Halloween img{
+	box-shadow: 5px 5px 15px #0D2E4A;
+}
+.imageRowC_DnD img{
 	box-shadow: 5px 5px 15px #0D2E4A;
 }
 .imageRowC_Christmas img{
@@ -262,8 +401,17 @@
 .imageRowC_NewYearEve img{
     box-shadow: 5px 5px 15px #AAAAAA;
 }
+.imageRowC_NewYearDay img{
+    box-shadow: 5px 5px 15px #5A4548;
+}
 .imageRowC_Birthday img{
     box-shadow: 5px 5px 15px #080828;
+}
+.imageRowC_Debtors img{
+    box-shadow: 5px 5px 15px #AAAAAA;
+}
+.imageRowC_Dark img{
+    box-shadow: 5px 5px 15px #000000;
 }
 
 .imageBoxC p{
@@ -274,6 +422,9 @@
     background-color: #EFDFDF;
 }
 .itemOverlayC_Halloween{
+    background-color: #001E3A;
+}
+.itemOverlayC_DnD{
     background-color: #001E3A;
 }
 .itemOverlayC_Christmas{
@@ -288,8 +439,17 @@
 .itemOverlayC_NewYearEve{
     background-color: #9A9A9A;
 }
+.itemOverlayC_NewYearDay{
+    background-color: #70363F;
+}
 .itemOverlayC_Birthday{
     background-color: #080828;
+}
+.itemOverlayC_Debtors{
+    background-color: #9A9A9A;
+}
+.itemOverlayC_Dark{
+    background-color: #2f2f2f;
 }
 
 .backgroundC_DnD{

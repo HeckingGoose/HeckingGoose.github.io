@@ -125,6 +125,18 @@ section p{
 	opacity: 1;
 }
 
+.themeButtons{
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	border: 3px solid black;
+	display: flex;
+	flex-direction: column;
+}
+.themeButtons button{
+	margin: 5px;
+}
+
 @media (max-aspect-ratio: 1)
 {
 	/* 
