@@ -1,0 +1,19 @@
+@media (max-aspect-ratio: 1){
+	.heading h1{
+		margin-top: 2vw;
+		font-size: 8vw;
+	}
+	.heading h3{
+		font-size: 5vw;
+	}
+}
+@media (min-aspect-ratio: 1){
+	.heading h1{
+		margin-top: min(10px, 1vw);
+		font-size: min(44px, 4vw);
+	}
+	.heading h3{
+		margin-top: min(20px, 2vw);
+		font-size: min(30px, 3vw);
+	}
+}

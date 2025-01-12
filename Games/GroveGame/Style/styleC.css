@@ -1,0 +1,16 @@
+.backgroundC{
+	border-radius: 0%;
+	background-image: url('../../../Img/Games/GroveGame/Back.webp');
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: repeat;
+	background-size: 5vw;
+}
+.backgroundC_DnD{
+	border-radius: 0%;
+	background-image: url('../../../Img/Games/GroveGame/Back.webp'), url('../../../Img/Themes/DnD/MainBack.gif');
+	background-attachment: fixed, fixed;
+	background-position: center, center;
+	background-repeat: repeat, no-repeat;
+	background-size: 5vw, cover;
+}
