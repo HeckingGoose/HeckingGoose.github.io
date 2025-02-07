@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<head>
+	<link rel="stylesheet" href="../../../Style/style.css">
+	<link rel="stylesheet" href="../../../Style/styleC.css">
+	<link rel="stylesheet" href="../../Style/style.css">
+    <link rel="stylesheet" href="Style/style.css">
+    <link rel="icon" href="../../../Img/UI/icon.webp"/>
+	<title>Dr Coomer Neopet | Goose's Website</title>
+</head>
+<body>
+    <div class = "background backgroundC">
+        <div class = "mainBody mainBodyC">
+            <div class = "heading headingC">
+                <div class = "title titleC">
+                    <h1>Dr Coomer (GBA)</h1>
+                    <h3>Helloooo Gordan!</h3>
+                </div>
+                <div class = "headerItems">
+                    <div class = "headerItem headerItemC">
+                        <a href = "../../../index.html" title = "Return to home-page?"><img src = "../../../Img/UI/Home.webp"/></a>
+                    </div>
+                    <div class = "headerItem headerItemC">
+                        <a href = "../../LimboLane/index.html" title = "Spooky ghost gambling"><img src = "../../../Img/Games/LimboLane/LogoText.webp"/></a>
+                    </div>
+                    <div class = "headerItem headerItemC">
+                        <a href = "../../../Index/index.html" title = "Travel to index-page?"><img src = "../../../Img/UI/Index.webp"/></a>
+                    </div>
+                </div>
+            </div>
+            <div class = "content">
+                <div class = "referencesContainer">
+                    <section class = "gameLink sectionC">
+                        <h1><a href = "https://github.com/HeckingGoose/Dr-Coomer-Neopet-GBA-" title = "Helloooo Gordan!">Dr Coomer Neopet can be found on my github here</a></h1>
+                    </section>
+                    <section class = "sectionC">
+                        <p>YouTube Series:</p>
+                        <ul>
+                            <li>Host: <a href = "https://www.youtube.com/@wayneradiotv" title = "Technically Holly who did the voice for Dr Coomer, but I don't have a link for them specifically :Z">wayneradiotv</a></li>
+                        </ul>
+                        <p>Developer:</p>
+                        <ul>
+                            <li>Code: <a href = "https://github.com/HeckingGoose" title = "Me :>">HeckingGoose</a></li>
+                        </ul>
+                    </section>
+                </div>
+                <section class = "sectionC">
+                    <h1>What is Dr Coomer Neopet?</h1>
+                    <div class = "imageRow imageRowC">
+                        <div class = "imageBox imageBoxC">
+                            <img src = "../../../Img/Games/DrCoomer/GBA/MainScreen.webp" alt = "An image of the main screen for Dr Coomer."/>
+                            <p>-An image of the main screen for Dr Coomer.</p>
+                        </div>
+                        <p></p>
+                        <div class = "imageBox imageBoxC">
+                            <img src = "../../../Img/Games/DrCoomer/GBA/ShopScreen.webp" alt = "An image of the shop screen for Dr Coomer."/>
+                            <p>-An image of the shop screen for Dr Coomer.</p>
+                        </div>
+                    </div>
+                    <p>Dr Coomer is a project that I originally created using Python with Pygame somewhere between 2020-2021. The project was originally made as a joke based on the YouTube series <a href = "https://www.youtube.com/playlist?list=PLglTodSj6fQGbLTtPF_YXVJ6TKSaC3O02" title = "Half Life VR but the AI is self-aware on YouTube.">'Half Life VR but the AI is self-aware'</a>.</p>
+                    <p>The version seen here is a port of the project to the GameBoy Advance using <a href = "https://github.com/GValiente/butano" title = "Link to Butano's GitHub repository.">Butano.</a></p>
+                    <p>From making this, I've learned that creating GameBoy Advance games in the modern day is actually surprisingly simple due to modern open-source development tools provided by the community.</p>
+                    <p>However, the documentation for these tools was very "utilitarian" in the sense that it gave the absolute definition of what something did, with minimal examples or explanation for what it meant, which did lead to me spending much longer than usual going between reading the documentation and fiddling about to fully understand what something did. Really makes me realise how much I've taken the Microsoft documentation pages for granted.</p>
+                    <p>As well as that, it may have been an issue on my end (but I have no way of knowing), the .clear() function for vectors simply did not show up in intellisense, so even now .clear() shows an error in VS Code, however the code will still happily compile from the command line. That may have taken me an hour or two to figure out due to some very lacking documentation.</p>
+                    <p>Regardless though, the mere existence of Butano definitely made GameBoy Advance development something that was actually feasible for me, and perhaps in the future I might return to the console to make something else, because this was certainly a fun challenge in places.</p>
+                    <p></p>
+                    <p>(I also really wanna try to find a GBA and flash cart so that I can test this on real hardware because that would just be the coolest thing).</p>
+                </section>
+            </div>
+        </div>
+    </div>
+    <div class = "themeButtons">
+        <button onClick="InvertTheme()"><img id = "InvertThemeButton" src = "Img/UI/UnknownButton.png" alt = "Enable/Disable seasonal theme button"></img></button>
+        <button onClick="InvertLightness()"><img id = "InvertLightnessButton" src = "Img/UI/UnknownButton.png" alt = "Toggle light/dark theme button"></img></button>
+    </div>
+    <script src = "../../../Script/manageThemeButtons.js"></script>
+    <script src = "../../../Script/dateStyle.js"></script>
+    <script src = "../../../Script/themeSwap.js"></script>
+</body>
