@@ -14,3 +14,11 @@
 	background-repeat: repeat, no-repeat;
 	background-size: 5vw, cover;
 }
+.backgroundC_Fools{
+	border-radius: 0%;
+	background-image: url('../../../Img/Games/GroveGame/Back.webp'), linear-gradient(#ED007B, #00D3B2);
+	background-attachment: fixed, fixed;
+	background-position: center, center;
+	background-repeat: repeat, no-repeat;
+	background-size: 5vw, cover;
+}

@@ -1,3 +1,15 @@
+@keyframes backgroundFools{
+    0%{
+        background-color: #FF206E;
+    }
+    50%{
+        background-color: #00F5D4;
+    }
+    100%{
+        background-color: #FF206E;
+    }
+}
+
 .mainBodyC{
     background-color: #FFFAFA;
     box-shadow: 5px 5px 15px #CFCFCF;
@@ -41,6 +53,10 @@
 .mainBodyC_Dark{
     background-color: #111111;
     box-shadow: 5px 5px 15px #000000;
+}
+.mainBodyC_Fools{
+    background-image: linear-gradient(#ED007B, #00D3B2);
+    box-shadow: 5px 5px 15px #BD004B;
 }
 
 .titleC{
@@ -98,6 +114,11 @@
     border: 2px #2F2F2F;
     border-style: none none solid none;
 }
+.titleC_Fools{
+    background-color: #FD008B;
+    border: 2px #00D3B2;
+    border-style: none none solid none;
+}
 
 .headingC{
     background-color: #FFFEFE;
@@ -152,6 +173,11 @@
 .headingC_Dark{
     background-color: #222222;
     border: 2px #2f2f2f;
+    border-style: none none solid none;
+}
+.headingC_Fools{
+    background-color: #FD008B;
+    border: 2px #00D3B2;
     border-style: none none solid none;
 }
 
@@ -243,6 +269,14 @@
 .headerItemC_Dark img:hover{
     background-color: #2f2f2f;
 }
+.headerItemC_Fools{
+    background-color: #FD008B;
+    border: 2px #00D3B2;
+    border-style: none none solid none;
+}
+.headerItemC_Fools img:hover{
+    background-color: #00D3B2;
+}
 
 .currentPageC{
 	background-color: #EFDFDF;
@@ -276,6 +310,9 @@
 }
 .currentPageC_Dark{
     background-color: #2f2f2f;
+}
+.currentPageC_Fools{
+    background-color: #00D3B2;
 }
 
 .sectionC{
@@ -311,6 +348,9 @@
 .sectionC_Dark{
     border: 2px dashed #2f2f2f;
 }
+.sectionC_Fools{
+    border: 2px dashed #00D3B2;
+}
 
 .sectionC img{
     box-shadow: 3px 3px 10px #CFCFCF;
@@ -344,6 +384,9 @@
 }
 .sectionC_Dark img{
     box-shadow: 3px 3px 10px #000000;
+}
+.sectionC_Fools img{
+    box-shadow: 3px 3px 10px #BD004B;
 }
 
 .profileC img{
@@ -379,6 +422,9 @@
 .profileC_Dark img{
     box-shadow: 3px 3px 10px #000000;
 }
+.profileC_Fools img{
+    box-shadow: 3px 3px 10px #BD004B;
+}
 
 .imageRowC img{
     box-shadow: 5px 5px 15px #CFCFCF;
@@ -412,6 +458,9 @@
 }
 .imageRowC_Dark img{
     box-shadow: 5px 5px 15px #000000;
+}
+.imageRowC_Fools img{
+    box-shadow: 3px 3px 10px #BD004B;
 }
 
 .imageBoxC p{
@@ -451,6 +500,9 @@
 .itemOverlayC_Dark{
     background-color: #2f2f2f;
 }
+.itemOverlayC_Fools{
+    background-color: #FD008B;
+}
 
 .backgroundC_DnD{
 	border-radius: 0%;
@@ -459,4 +511,9 @@
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+}
+.backgroundC_Fools{
+    animation-name: backgroundFools;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
 }

@@ -14,3 +14,11 @@
 	background-repeat: no-repeat, no-repeat;
 	background-size: cover, cover;
 }
+.backgroundC_Fools{
+	border-radius: 0%;
+	background-image: url('../../../Img/Games/DebtorsGrimoire/DebtorsBackground.webp'), linear-gradient(#ED007B, #00D3B2);
+	background-attachment: fixed, fixed;
+	background-position: center, center;
+	background-repeat: no-repeat, no-repeat;
+	background-size: cover, cover;
+}

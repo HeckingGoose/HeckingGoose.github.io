@@ -40,12 +40,22 @@ function ApplyProfileTheme()
                         {
                             case 1: // New years day
                                 profileImage.src = "Img/Themes/NewYear/Profile.png";
+                                break;
                         }
+                        break;
                     case 1: // February
                         switch (day)
                         {
                             case 14: // Valentines
                                 profileImage.src = "Img/Themes/Valentine/Profile.png";
+                                break;
+                        }
+                        break;
+                    case 3: //April
+                        switch (day)
+                        {
+                            case 1: // April fools
+                            profileImage.src = "Img/Themes/Fools/Profile.png";
                                 break;
                         }
                         break;

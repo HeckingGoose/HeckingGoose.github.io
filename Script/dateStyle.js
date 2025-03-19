@@ -45,6 +45,12 @@ function ApplyTheme()
         background[i].classList.remove("backgroundC_DnD");
         background[i].classList.add("backgroundC");
     }
+    var background = document.querySelectorAll(".backgroundC_Fools");
+    for (var i = 0; i < background.length; i++)
+    {
+        background[i].classList.remove("backgroundC_Fools");
+        background[i].classList.add("backgroundC");
+    }
 
     // Apply theme colouring
     switch (targetTheme)
@@ -68,6 +74,9 @@ function ApplyTheme()
                 );
             break;
         case "DnD":
+            // Set theme and background colour
+            document.body.style.backgroundColor = '#1A2B49';
+
             // Apply DnD theme background
             var background = document.querySelectorAll(".backgroundC");
             for (var i = 0; i < background.length; i++)
@@ -234,6 +243,32 @@ function ApplyTheme()
                 '#FFFFFF' // h6
                 );
             break;
+        case "Fools":
+            // Apply Fools theme background
+            var background = document.querySelectorAll(".backgroundC");
+            for (var i = 0; i < background.length; i++)
+            {
+                background[i].classList.remove("backgroundC");
+                background[i].classList.add("backgroundC_Fools");
+            }
+
+            // Set theme and background colour
+            document.body.style.backgroundColor = '#E1FF00';
+
+            // Set text colours
+            SetTextColour(
+                '#FF8B33', // a
+                '#E1FF00', // p
+                '#E1FF00', // ul
+                '#E1FF00', // li
+                '#E1FF00', // h1
+                '#E1FF00', // h2
+                '#E1FF00', // h3
+                '#E1FF00', // h4
+                '#E1FF00', // h5
+                '#E1FF00' // h6
+                );
+            break;
         default:
             // Set theme and background colour
             document.body.style.backgroundColor = '#FFFFFF';
@@ -294,6 +329,15 @@ function GenerateThemeString()
                     {
                         case 14:
                             output = "Valentine";
+                    }
+                    break;
+
+                case 3: // April
+                    switch (day)
+                    {
+                        case 1: // Fools
+                            output = "Fools";
+                            break;
                     }
                     break;
                 case 8: // September
