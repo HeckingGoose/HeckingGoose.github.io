@@ -16,9 +16,13 @@
 }
 .backgroundC_Fools{
 	border-radius: 0%;
-	background-image: url('../../../Img/Games/GroveGame/Back.webp'), linear-gradient(#ED007B, #00D3B2);
-	background-attachment: fixed, fixed;
-	background-position: center, center;
-	background-repeat: repeat, no-repeat;
-	background-size: 5vw, cover;
+	background-image: url('../../../Img/Games/GroveGame/Back.webp');
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: repeat;
+	background-size: 5vw;
+
+	animation-name: backgroundFools;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
 }
