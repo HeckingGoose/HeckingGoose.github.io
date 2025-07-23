@@ -1,6 +1,6 @@
 .backgroundC{
 	border-radius: 0%;
-	background-image: url('../../../Img/Games/DebtorsGrimoire/DebtorsBackground.webp');
+	background-image: url('../../../../Img/Games/Dreaming/DreamingBackground.webp');
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -8,7 +8,7 @@
 }
 .backgroundC_DnD{
 	border-radius: 0%;
-	background-image: url('../../../Img/Games/DebtorsGrimoire/DebtorsBackground.webp'), url('../../../Img/Themes/DnD/MainBack.gif');
+	background-image: url('../../../../Img/Games/Dreaming/DreamingBackground.webp'), url('../../../../Img/Themes/DnD/MainBack.gif');
 	background-attachment: fixed, fixed;
 	background-position: center, center;
 	background-repeat: no-repeat, no-repeat;
@@ -16,7 +16,7 @@
 }
 .backgroundC_Fools{
 	border-radius: 0%;
-	background-image: url('../../../Img/Games/DebtorsGrimoire/DebtorsBackground.webp');
+	background-image: url('../../../../Img/Games/Dreaming/DreamingBackground.webp');
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
