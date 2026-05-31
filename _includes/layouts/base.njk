@@ -1,0 +1,39 @@
+---
+title_main: TITLE_MAIN
+title_sub: TITLE_SUB
+title_page: TITLE_PAGE
+---
+
+<head>
+    <title>{{title_page}}</title>
+	<link rel="stylesheet" href="/style.css">
+	<meta name="pinterest" content="nopin" />
+</head>
+<body>
+    <div class = "background backgroundC">
+		<div class = "mainBody mainBodyC">
+			<div class = "heading headingC">
+				<div class = "title titleC">
+					<h1>{{title_main}}</h1>
+					<h3>{{title_sub}}</h3>
+				</div>
+				<div class = "headerItems">
+					<div class = "headerItem headerItemC">
+						<div class = "currentPage currentPageC">
+							<a href = "index.html" title = "Aren't you already on this page?"><img src = "Img\UI\Home.webp" alt = "Home page icon."/></a>
+						</div>
+					</div>
+					<div class = "headerItem headerItemC">
+						<a href = "Games/Game Jam/GroveGame/index.html" title = "Spooky Present Time"><img src = "Img\Games\GroveGame\LogoText.webp" alt = "Greyling Grove page icon."/></a>
+					</div>
+					<div class = "headerItem headerItemC">
+						<a href = "Index\index.html" title = "Travel to index-page?"><img src = "Img\UI\Index.webp" alt = "Index page icon."/></a>
+					</div>
+				</div>
+			</div>
+			<div class = "content">
+                {{content | safe}}
+            </div>
+        </div>
+    </div>
+</body>
